@@ -51,12 +51,10 @@ async function getPostMetadata(mdPath: string): Promise<PostAttrs | null> {
     const md = await Deno.readTextFile(mdPath);
     const extracted = extract<PostAttrs>(md);
     if (!isPostAttrs(extracted.attrs)) {
-      console.error(`invalid front matter in ${mdPath}`);
-      return null;
+      throw new Error(`invalid front matter in ${mdPath}`);
     }
     return extracted.attrs;
-  } catch (err) {
-    console.error(`error reading dirPath: ${mdPath}, error: ${err}`);
+  } catch {
     return null;
   }
 }
