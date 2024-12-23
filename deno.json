@@ -11,6 +11,7 @@
     "@std/front-matter": "jsr:@std/front-matter@^1.0.0",
     "@std/fs": "jsr:@std/fs@^1.0.0",
     "@std/http": "jsr:@std/http@^1.0.0",
+    "@std/path": "jsr:@std/path@^1.0.8",
     "alea": "npm:alea@^1.0.1",
     "feed": "npm:feed@^4.2.2",
     "highlight.js": "npm:highlight.js@^11.11.0",
