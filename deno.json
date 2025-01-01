@@ -18,14 +18,20 @@
     "markdown-it": "npm:markdown-it@^14.1.0",
     "markdown-it-anchor": "npm:markdown-it-anchor@^9.0.0",
     "markdown-it-toc-done-right": "npm:markdown-it-toc-done-right@^4.2.0",
-    "simplex-noise": "npm:simplex-noise@^4.0.1"
+    "simplex-noise": "npm:simplex-noise@^4.0.1",
+    "og_edge": "https://deno.land/x/og_edge@0.0.6/mod.ts"
   },
   "tasks": {
-    "generate": "deno run --allow-read --allow-write codegen/codegen.ts",
+    "generate": "deno run -A codegen/codegen.ts",
     "start": "deno run --allow-net --allow-read --allow-env --env main.ts generated",
     "outdated": "deno outdated --update --latest",
-    "gs": "deno task generate && deno task start"
+    "gs": {
+      "description": "Generate and start",
+      "command": "deno task start",
+      "dependencies": ["generate"]
+    }
   },
+
   "fmt": {
     "exclude": ["generated"]
   },
