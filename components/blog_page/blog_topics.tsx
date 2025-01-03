@@ -10,7 +10,7 @@ export function BlogTopics(props: BlogTopicsProps) {
     <DIV class="fart-topics">
       {props.topics
         .map((topic) => <BlogTopic topic={topic} />)
-        .join("")}
+        .join(" ")}
     </DIV>
   );
 }
