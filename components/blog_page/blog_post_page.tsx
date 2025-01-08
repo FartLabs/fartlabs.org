@@ -1,4 +1,4 @@
-import { LINK, META } from "@fartlabs/htx";
+import { LINK } from "@fartlabs/htx";
 import type { Post } from "#/components/blog_page/posts.ts";
 import { PageLayout } from "#/components/page_layout.tsx";
 import { PageSection } from "#/components/page_section.tsx";
@@ -16,9 +16,7 @@ export function BlogPostPage(props: BlogPostPageProps) {
       description={props.post.attrs.description}
       headHTML={[
         <LINK rel="stylesheet" href="/blog-post.css" />,
-        <META name="og:title" content={props.post.attrs.title} />,
-        <META name="og:description" content={props.post.attrs.description} />,
-        <META name="og:image" content="./og.png" />,
+        `<meta property="og:image" content="https://fartlabs.org/${props.post.id}/og.png">`,
       ].join("")}
     >
       <PageSection>
