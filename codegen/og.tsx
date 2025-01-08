@@ -10,17 +10,36 @@ export function renderPostImageResponse(post: Post): Response {
   return new ImageResponse(
     <div
       style={{
+        display: "flex",
         backgroundColor: "#004021",
         color: "#c3ef3c",
         height: "100%",
         width: "100%",
-        fontSize: 100,
         fontFamily: "Overpass",
-        paddingTop: "100px",
-        paddingLeft: "50px",
       }}
     >
-      {post.attrs.title}
+      <div
+        style={{
+          display: "flex",
+          fontSize: 100,
+          fontWeight: "bold",
+          paddingTop: "100px",
+          paddingLeft: "50px",
+        }}
+      >
+        {post.attrs.title}
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          display: "flex",
+          fontSize: "40px",
+          bottom: "20px",
+          right: "20px",
+        }}
+      >
+        fartlabs.org/{post.id}
+      </div>
     </div>,
     {
       width: 1200,

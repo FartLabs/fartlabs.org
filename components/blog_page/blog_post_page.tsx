@@ -16,7 +16,7 @@ export function BlogPostPage(props: BlogPostPageProps) {
       description={props.post.attrs.description}
       headHTML={[
         <LINK rel="stylesheet" href="/blog-post.css" />,
-        <META name="og:image" content={`/og.png`} />,
+        <META name="og:image" content="./og.png" />,
       ].join("")}
     >
       <PageSection>
