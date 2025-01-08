@@ -6,6 +6,7 @@ import { BlogPage } from "#/components/blog_page/blog_page.tsx";
 import { BlogPostPage } from "#/components/blog_page/blog_post_page.tsx";
 import { PageRedirect } from "#/components/page_redirect.tsx";
 import people from "#/static/people.json" with { type: "json" };
+import { renderPostImageResponse } from "#/codegen/og.tsx";
 
 /**
  * generateHTML generates the HTML files for the website.
@@ -37,6 +38,9 @@ export async function generateHTML(directory: string) {
       `${directory}/${post.id}/index.html`,
       <BlogPostPage post={post} />,
     );
+
+    const ogPNG = renderPostImageResponse(post);
+    await Deno.writeFile(`${directory}/${post.id}/og.png`, await ogPNG.bytes());
   }
 
   for (const [alias, destination] of aliases) {
