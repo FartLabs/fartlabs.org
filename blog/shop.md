@@ -8,6 +8,8 @@ topics: ["Community", "Web"]
 date: 2025-02-17
 ---
 
+## Technical overview
+
 We announce the launch of the official FartLabs merch store, starting with the
 must-have accessory of the season: the **FartLabs Baseball Cap**!
 
@@ -30,18 +32,18 @@ GitHub, so you know it's a legit lovechild between open-source tech and
 cutting-edge web development.
 
 We even borrowed some inspiration from the awesome Deno merch store (thanks
-denoland/merch!). This means a smooth, intuitive shopping experience for you,
-and a tribute to what's possible. We're all about transparency and sharing our
-process, so feel free to dive into the code and see how it all works. Maybe
-it'll even inspire your next project!
+[denoland/merch](https://github.com/denoland/merch)!). This means a smooth,
+intuitive shopping experience for you, and a tribute to what's possible. We're
+all about transparency and sharing our process, so feel free to dive into the
+code and see how it all works. Maybe it'll even inspire your next project!
 
 ## Why this matters to you
 
-- **Support the [FartLabs Mission](/mission):** Every purchase helps fuel our
+- **Support the [FartLabs Mission](/mission)**: Every purchase helps fuel our
   passion for building innovative projects.
-- **Limited-Time Launch Price:** Snag your FartLabs Baseball Cap at a special
+- **Limited-Time Launch Price**: Snag your FartLabs Baseball Cap at a special
   launch price. This offer won't last forever, so don't miss out!
-- **Join the Community:** Rocking the FartLabs merch is a way to connect with a
+- **Join the Community**: Rocking the FartLabs merch is a way to connect with a
   community of like-minded individuals who appreciate a good blend of tech
   and... farts.
 
