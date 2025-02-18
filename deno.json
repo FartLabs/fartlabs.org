@@ -12,7 +12,7 @@
     "@std/fs": "jsr:@std/fs@^1.0.0",
     "@std/http": "jsr:@std/http@^1.0.0",
     "@std/path": "jsr:@std/path@^1.0.8",
-    "@types/react": "npm:@types/react@^19.0.3",
+    "@types/react": "npm:@types/react@^19.0.10",
     "alea": "npm:alea@^1.0.1",
     "feed": "npm:feed@^4.2.2",
     "highlight.js": "npm:highlight.js@^11.11.0",
