@@ -93,7 +93,14 @@ like Gregory, that laughter breaks down barriers and connects us all.
 
 <!-- TODO: Add photo of Gregory with Ethan and Brandon. -->
 
-[![Gregory Davidson](https://github.com/gddmadoss.png)](https://github.com/gddmadoss)
+<a href="https://github.com/gddmadoss">
+  <img
+    src="https://github.com/gddmadoss.png"
+    alt="Gregory Davidson"
+    class="border-tube-green glow"
+    title="Gregory Davidson"
+  >
+</a>
 
 ## Take control
 
