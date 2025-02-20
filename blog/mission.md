@@ -57,19 +57,17 @@ the tech industry, we can take control of our digital experiences.
 
 ## Our vision
 
-The vision of the Semantic Web emphasizes a connected information space where
-diverse systems can understand and interpret data. We believe this approach can
-revolutionize personal computing.
+We envision a future where digital tools seamlessly integrate, adapting to
+unique needs. We're building software based on Semantic Web principles, which
+empower users to connect different applications and create a truly personalized
+digital environment.
 
-Our software primitives will leverage Semantic Web principles to allow users to
-easily integrate functionalities between different applications. This empowers
-you to choose the necessary tools and build a personalized digital environment
-that seamlessly fits your workflow and preferences.
-
-Imagine being able to customize your communication app to work flawlessly with
-your calendar or create a personalized dashboard that aggregates data from
-various sources, all based on your specific needs. This is the future we strive
-towards.
+Imagine effortlessly linking a communication app with a calendar, or building a
+custom dashboard that aggregates information from all favorite sources. The
+profound impact of this lies in the semantic nature of our software, enabling it
+to autonomously create systems that adapt and evolve with user needs. This isn't
+just theoretically possible — we're making it a reality. Our software will give
+users the control to build the workflows that works best for them.
 
 ## Family tradition
 
@@ -104,3 +102,4 @@ By contributing to our project or advocating for open, user-centric software
 development, you can be a part of this movement. Join us!
 <a class="fart-button" href="https://github.com/FartLabs" target="_blank">GitHub<small>↗</small></a>
 <a class="fart-button" href="https://go.fart.tools/chat" target="_blank">Chat<small>↗</small></a>
+<a class="fart-button" href="https://shop.fartlabs.org/" target="_blank">Shop<small>↗</small></a>
