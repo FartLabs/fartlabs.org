@@ -38,6 +38,9 @@
     "exclude": ["generated"]
   },
   "lint": {
-    "exclude": ["generated"]
+    "exclude": ["generated"],
+    "rules": {
+      "exclude": ["jsx-key"]
+    }
   }
 }

@@ -26,7 +26,7 @@ export function ProjectsSection() {
             </P>
           }
           tubeColor="magenta"
-          tubeGlow={true}
+          tubeGlow
           topics={["deno", "jsr.io", "jsx/tsx"]}
         />
 
@@ -45,7 +45,7 @@ export function ProjectsSection() {
             </P>
           }
           tubeColor="purple"
-          tubeGlow={true}
+          tubeGlow
           topics={["deno", "html", "jsr.io", "jsx/tsx"]}
         />
 
@@ -65,7 +65,7 @@ export function ProjectsSection() {
             </P>
           }
           tubeColor="blue"
-          tubeGlow={true}
+          tubeGlow
           topics={["deno", "http", "jsr.io", "jsx/tsx"]}
         />
 
@@ -86,7 +86,7 @@ export function ProjectsSection() {
             </P>
           }
           tubeColor="green"
-          tubeGlow={true}
+          tubeGlow
           topics={["css"]}
         />
       </DIV>
