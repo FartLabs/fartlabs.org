@@ -1,7 +1,7 @@
 import { GA4Report } from "@kitsonk/ga4";
 
 export function useGoogleAnalytics(
-  measurementId: string,
+  measurementId: string | undefined,
   fn: (
     request: Request,
     info: Deno.ServeHandlerInfo<Deno.NetAddr>,
