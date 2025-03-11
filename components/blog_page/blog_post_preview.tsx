@@ -7,7 +7,7 @@ export function BlogPostPreview(props: { post: Post; level?: 1 | 3 }) {
   return (
     <DIV class="post-preview">
       <Heading>
-        <A class="fart-link-visible-on-hover" href={`/${props.post.id}`}>
+        <A class="fart-link" href={`/${props.post.id}`}>
           {props.post.attrs.title}
         </A>
       </Heading>
