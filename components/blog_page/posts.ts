@@ -1,5 +1,5 @@
-import type { WalkEntry } from "@std/fs";
-import { expandGlobSync } from "@std/fs";
+import type { WalkEntry } from "@std/fs/expand-glob";
+import { expandGlob } from "@std/fs/expand-glob";
 import { test } from "@std/front-matter";
 import { extract } from "@std/front-matter/any";
 import { renderHTML } from "./markdown.ts";
@@ -18,12 +18,16 @@ export function getPostsByTopicID(posts: Post[], topicID?: string) {
 }
 
 /**
- * readPostsSync reads all the blog posts synchronously.
+ * readPosts reads all the blog posts.
  */
-export function readPostsSync(): Post[] {
-  return Array.from(expandGlobSync("blog/*.md"))
-    .map((file) => readPostSync(file))
-    .toSorted(byDateDescending);
+export function readPosts(): Promise<Post[]> {
+  return Array.fromAsync(expandGlob("blog/*.md"))
+    .then((files) => {
+      return Promise.all(files.map((file) => readPost(file)));
+    })
+    .then((posts) => {
+      return posts.toSorted(byDateDescending);
+    });
 }
 
 /**
@@ -51,7 +55,7 @@ export function byDateDescending(a: Post, b: Post): number {
 /**
  * readPostSync reads a blog post synchronously.
  */
-export function readPostSync(entry: WalkEntry): Post {
+export function readPost(entry: WalkEntry): Post {
   const md = Deno.readTextFileSync(entry.path);
   if (!test(md)) {
     throw new Error(`invalid front matter in ${entry.path}`);

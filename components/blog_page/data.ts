@@ -2,10 +2,10 @@ import {
   getAliases,
   getFeaturedPosts,
   getSortedTopics,
-  readPostsSync,
+  readPosts,
 } from "./posts.ts";
 
-export const posts = readPostsSync();
+export const posts = await readPosts();
 export const featuredPosts = getFeaturedPosts(posts);
 export const topics = getSortedTopics(posts);
 export const aliases = getAliases(posts);
