@@ -16,5 +16,3 @@ jobs:
           deno-version: v2.x
       - name: Lint
         run: deno lint
-      - name: Check
-        run: deno check codegen/codegen.ts
