@@ -29,7 +29,7 @@ technology, and its vibrant culture of science.
 
 ## Project submission
 
-Therse are the accolades we have planned for the top projects:
+These are the accolades we have planned for the top projects:
 
 - **Best Use of AI**: Build something smart and innovative using artificial
   intelligence.
@@ -49,7 +49,7 @@ Therse are the accolades we have planned for the top projects:
   available, [sign up now][In-person]; live-streamed for online participants).
 - **March 23, 2025 - April 6, 2025**: Workshops, online collaboration, and
   project submissions.
-- **April 8, 2025**: Live Closing Ceremony (live-streamed); winner reveal on
+- **April 8, 2025**: Live Closing Ceremony (live-streamed); winner revealed on
   Devpost.
 
 ## FAQ
