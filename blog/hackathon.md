@@ -8,7 +8,7 @@ topics: ["Community", "Competition"]
 date: 2025-03-11
 ---
 
-> **tl;dr**: [Join our Discord](https://go.fart.tools/chat)**: Connect with the
+> **tl;dr**: [Join our Discord](https://go.fart.tools/chat). Connect with the
 > community, find teammates, and stay updated.
 
 We invite you to build with the FartLabs community, its technology, and its
@@ -36,17 +36,14 @@ programmer, this is going to be epic.
 
 These are the accolades to be awarded to the top projects:
 
-- **Best Use of AI**: Build something smart and innovative using artificial
-  intelligence.
-- **Most Futuristic**: Projects that feel straight out of a sci-fi movie.
-- **Most Fun**: Creativity and humor go a long way. We like to laugh.
-- **Most Practical**: Real-world impact matters. Solutions that solve genuine
-  problems get extra credit.
-- **Best Use of FartLabs Tech**: Show off your skills by integrating technology
-  maintained by [FartLabs](https://fartlabs.org/). Prize: **FartLabs Baseball
-  Cap**.
-- **Ethan's Favorite**: Chosen by [**Ethan Davidson**](https://etok.me/), Lead
-  Scientist and Founder at FartLabs.
+| Category                      | Description                                                                                                                       |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **Best Use of AI**            | Build something smart and innovative using artificial intelligence.                                                               |
+| **Most Futuristic**           | Projects that feel straight out of a sci-fi movie.                                                                                |
+| **Most Fun**                  | Creativity and humor go a long way. We like to laugh.                                                                             |
+| **Most Practical**            | Real-world impact matters. Solutions that solve genuine problems get extra credit.                                                |
+| **Best Use of FartLabs Tech** | Show off your skills by integrating technology maintained by [FartLabs](https://fartlabs.org/). Prize: **FartLabs Baseball Cap**. |
+| **Ethan's Favorite**          | Chosen by [**Ethan Davidson**](https://etok.me/), Lead Scientist and Founder at FartLabs.                                         |
 
 ## Prizes
 
@@ -99,11 +96,9 @@ fundamentals.
 
 ## Join the fun
 
-Spots are limited. Secure your place today.
-
+- Spots are limited. Secure your place today.
 - [Join our Discord](https://go.fart.tools/chat): Connect with the community,
   find teammates, and stay updated.
-
-This is an opportunity to build something awesome. Push the limits of your
-creativity, collaborate, and make your mark at **FartHacks 2025**. We are
-excited to see what **you** build!
+- This is an opportunity to build something awesome. Push the limits of your
+  creativity, collaborate, and make your mark at **FartHacks 2025**. We are
+  excited to see what **you** build!
