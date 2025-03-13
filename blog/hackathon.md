@@ -8,12 +8,11 @@ topics: ["Community", "Competition"]
 date: 2025-03-11
 ---
 
-> **tl;dr**: [Join our Discord](https://go.fart.tools/chat). Connect with the
-> community, find teammates, and stay updated.
+> **tl;dr**: [Join our Discord](https://go.fart.tools/chat)!
 
-We invite you to build with the FartLabs community, its technology, and its
-vibrant culture of science. Experience beyond the boundaries of what's possible
-with FartLabs!
+We invite **you** to build with the FartLabs community, its technology, and its
+vibrant culture of science. Experience what's beyond the boundaries of science
+and technology with us!
 
 This two-week hackathon is your chance to create something extraordinary,
 connect with a vibrant community of builders, and compete for coveted prizes.
@@ -32,25 +31,44 @@ programmer, this is going to be epic.
 - **Understanding**: Show that you understand the capabilities of the software
   you implement.
 
-## Project submission
+## Submission guidelines
+
+To submit a project for the hackathon, you must build a net new project or an
+existing project with a newly added enhancement. When you have built an
+application that matches this description,
+[please submit it here](https://go.fart.tools/hackathon-submit) and include the
+following key information:
+
+- Title
+- Description of your project
+- A URL to a demoable product or a video demo
+
+We will accept submissions until 5pm Pacific Standard Time on Sunday, **April
+6th, 2025**. We'll announce winners Tuesday, **April 8th, 2025**.
+
+## Judges
+
+- [Ethan Davidson](https://github.com/EthanThatOneKid): Lead Scientist, Founder
+  at FartLabs
+- [Evan Jimenez](https://github.com/EvanCPSC): Scientist at FartLabs
+- [John C Manuel](https://github.com/johncmanuel): Scientist at FartLabs
+- [Kyle Ho](https://github.com/KQPH): Scientist at FartLabs
+
+## Non-cash prizes
 
 These are the accolades to be awarded to the top projects:
 
-| Category                      | Description                                                                                                                       |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| **Best Use of AI**            | Build something smart and innovative using artificial intelligence.                                                               |
-| **Most Futuristic**           | Projects that feel straight out of a sci-fi movie.                                                                                |
-| **Most Fun**                  | Creativity and humor go a long way. We like to laugh.                                                                             |
-| **Most Practical**            | Real-world impact matters. Solutions that solve genuine problems get extra credit.                                                |
-| **Best Use of FartLabs Tech** | Show off your skills by integrating technology maintained by [FartLabs](https://fartlabs.org/). Prize: **FartLabs Baseball Cap**. |
-| **Ethan's Favorite**          | Chosen by [**Ethan Davidson**](https://etok.me/), Lead Scientist and Founder at FartLabs.                                         |
-
-## Prizes
-
-### Non-cash prizes
-
-- **Best Use of FartLabs Tech**:
-  [FartLabs Baseball Cap](https://shop.fartlabs.org/products/fartlabs-baseball-cap)
+- **Best Use of AI**: Build something smart and innovative using artificial
+  intelligence.
+- **Most Futuristic**: Something that breaks the boundaries of what's possible.
+- **Most Fun**: Creativity and humor go a long way. We like to laugh.
+- **Most Practical**: Real-world impact matters. Solutions that solve genuine
+  problems get extra credit.
+- **Best Use of FartLabs Tech**: Show off your skills by integrating technology
+  maintained by **FartLabs**. Sponsor prize:
+  [FartLabs Baseball Cap](https://shop.fartlabs.org/products/fartlabs-baseball-cap).
+- **Ethan's Favorite**: Chosen by [**Ethan Davidson**](https://etok.me/), Lead
+  Scientist and Founder at FartLabs.
 
 ## Schedule
 
@@ -60,6 +78,19 @@ These are the accolades to be awarded to the top projects:
 - **March 23, 2025 - April 6, 2025**: Workshops, online collaboration, and
   project submissions.
 - **April 8, 2025**: Live Closing Ceremony (live-streamed); winner revealed.
+
+## Resources
+
+Here are links and resources to help you get started.
+
+- [**@fartlabs/ht**](https://github.com/FartLabs/ht): Type-safe HTML rendering
+  library for Deno. [**@fartlabs/htx**](https://github.com/FartLabs/htx) is is a
+  library of `@fartlabs/jsonx` components for composing HTML content.
+- [**@fartlabs/rt**](https://github.com/FartLabs/rt): Minimal HTTP router
+  library based on the standard HTTP API.
+  [**@fartlabs/rtx**](https://github.com/FartLabs/rtx) is a library of
+  `@fartlabs/jsonx` components for composing `@fartlabs/rt` routers.
+- [**Fart.css**](https://css.fart.tools/): FartLabs' open-source CSS library.
 
 ## FAQ
 
@@ -96,9 +127,9 @@ fundamentals.
 
 ## Join the fun
 
-- Spots are limited. Secure your place today.
-- [Join our Discord](https://go.fart.tools/chat): Connect with the community,
-  find teammates, and stay updated.
-- This is an opportunity to build something awesome. Push the limits of your
-  creativity, collaborate, and make your mark at **FartHacks 2025**. We are
-  excited to see what **you** build!
+Spots are limited. Secure your place today. This is an opportunity to build
+something awesome. Push the limits of your creativity, collaborate, and make
+your mark at **FartHacks 2025**. We are excited to see what **you** build!
+
+[Join our Discord](https://go.fart.tools/chat) to connect with the community,
+find teammates, and stay up-to-date on the latest news and updates.
