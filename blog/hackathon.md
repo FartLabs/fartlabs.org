@@ -10,14 +10,14 @@ date: 2025-03-11
 
 > **tl;dr**: [Join our Discord](https://go.fart.tools/chat)!
 
-We invite **you** to build with the FartLabs community, its technology, and its
-vibrant culture of science. Experience what's beyond the boundaries of science
-and technology with us!
+We invite **you** to build with the FartLabs community, its technology, and
+vibrant scientific culture. Discover what awaits beyond the boundaries of
+science and technology with us!
 
 This two-week hackathon is your chance to create something extraordinary,
 connect with a vibrant community of builders, and compete for coveted prizes.
 Kicking off on **March 23, 2025**, FartHacks is open to creators of all
-experience levels. Whether you're a first-time hacker or an experienced
+experience levels. Whether you are a first-time hacker or an experienced
 programmer, this is going to be epic.
 
 ## Why join FartHacks?
@@ -34,8 +34,8 @@ programmer, this is going to be epic.
 ## Submission guidelines
 
 To submit a project for the hackathon, you must build a net new project or an
-existing project with a newly added enhancement. When you have built an
-application that matches this description,
+existing project with a newly added enhancement. After building an application
+that matches this description,
 [please submit it here](https://go.fart.tools/hackathon-submit) and include the
 following key information:
 
@@ -44,7 +44,7 @@ following key information:
 - A URL to a demoable product or a video demo
 
 We will accept submissions until 5pm Pacific Standard Time on Sunday, **April
-6th, 2025**. We'll announce winners Tuesday, **April 8th, 2025**.
+6th, 2025**, and announce winners on Tuesday, **April 8th, 2025**.
 
 ## Judges
 
@@ -60,7 +60,7 @@ These are the accolades to be awarded to the top projects:
 
 - **Best Use of AI**: Build something smart and innovative using artificial
   intelligence.
-- **Most Futuristic**: Something that breaks the boundaries of what's possible.
+- **Most Futuristic**: Something that breaks the boundaries of possibility.
 - **Most Fun**: Creativity and humor go a long way. We like to laugh.
 - **Most Practical**: Real-world impact matters. Solutions that solve genuine
   problems get extra credit.
@@ -99,7 +99,7 @@ Here are links and resources to help you get started.
 
 The maximum team size is 4.
 
-### What if I don't have a team?
+### What if I do not have a team?
 
 No problem, lone wolf! You can submit your project individually.
 
@@ -117,11 +117,11 @@ No, but using it could help you score the "Best Use of FartLabs Tech" prize.
 You have two weeks to develop and submit your project. Completion or perfection
 is not required; unique and intriguing concepts are welcome for submission.
 
-### What if I can't attend the in-person event?
+### What if I cannot attend the in-person event?
 
-No worries. We'll stream it live so everyone can participate!
+No worries. We will stream it live so everyone can participate!
 
-### What if I don't know how to code?
+### What if I do not know how to code?
 
 No problem! This is an opportunity to get started with Web development
 fundamentals.
