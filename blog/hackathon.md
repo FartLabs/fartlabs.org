@@ -83,13 +83,14 @@ These are the accolades to be awarded to the top projects:
 
 Here are links and resources to help you get started.
 
-- [**@fartlabs/ht**](https://github.com/FartLabs/ht): Type-safe HTML rendering
-  library for Deno. [**@fartlabs/htx**](https://github.com/FartLabs/htx) is is a
-  library of `@fartlabs/jsonx` components for composing HTML content.
-- [**@fartlabs/rt**](https://github.com/FartLabs/rt): Minimal HTTP router
-  library based on the standard HTTP API.
-  [**@fartlabs/rtx**](https://github.com/FartLabs/rtx) is a library of
-  `@fartlabs/jsonx` components for composing `@fartlabs/rt` routers.
+- [**@fartlabs/jsonx**](https://github.com/FartLabs/jsonx): Cross-runtime JSX
+  runtime and compiler library for composing JavaScript objects in Deno.
+- [**@fartlabs/ht**](https://github.com/FartLabs/ht) and
+  [**@fartlabs/htx**](https://github.com/FartLabs/htx) are type-safe HTML
+  rendering libraries for composing HTML content in Deno.
+- [**@fartlabs/rt**](https://github.com/FartLabs/rt) and
+  [**@fartlabs/rtx**](https://github.com/FartLabs/rtx) are minimal HTTP router
+  libraries based on the standard HTTP API for declaring HTTP routers in Deno.
 - [**Fart.css**](https://css.fart.tools/): FartLabs' open-source CSS library.
 
 ## FAQ
