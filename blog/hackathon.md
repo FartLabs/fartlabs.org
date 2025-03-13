@@ -18,7 +18,8 @@ This two-week hackathon is your chance to create something extraordinary,
 connect with a vibrant community of builders, and compete for coveted prizes.
 Kicking off on **March 23, 2025**, FartHacks is open to creators of all
 experience levels. Whether you are a first-time hacker or an experienced
-programmer, this is going to be epic.
+programmer, this is going to be epic. May the loudest and stinkiest projects
+win!
 
 ## Why join FartHacks?
 
@@ -33,7 +34,7 @@ programmer, this is going to be epic.
 
 ## Submission guidelines
 
-To submit a project for the hackathon, you must build a net new project or an
+To submit a project for the hackathon, you must build a new project or an
 existing project with a newly added enhancement. After building an application
 that matches this description,
 [please submit it here](https://go.fart.tools/hackathon-submit) and include the
@@ -67,8 +68,8 @@ These are the accolades to be awarded to the top projects:
 - **Best Use of FartLabs Tech**: Show off your skills by integrating technology
   maintained by **FartLabs**. Sponsor prize:
   [FartLabs Baseball Cap](https://shop.fartlabs.org/products/fartlabs-baseball-cap).
-- **Ethan's Favorite**: Chosen by [**Ethan Davidson**](https://etok.me/), Lead
-  Scientist and Founder at FartLabs.
+- **Ethan's Favorite**: Chosen by **Ethan Davidson**, Lead Scientist and Founder
+  at FartLabs.
 
 ## Schedule
 
@@ -126,7 +127,7 @@ No worries. We will stream it live so everyone can participate!
 No problem! This is an opportunity to get started with Web development
 fundamentals.
 
-## Join the fun
+## Join the fun!
 
 Spots are limited. Secure your place today. This is an opportunity to build
 something awesome. Push the limits of your creativity, collaborate, and make
