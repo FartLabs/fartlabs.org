@@ -14,12 +14,11 @@ We invite **you** to build with the FartLabs community, its technology, and
 vibrant scientific culture. Discover what awaits beyond the boundaries of
 science and technology with us!
 
-This two-week hackathon is your chance to create something extraordinary,
-connect with a vibrant community of builders, and compete for coveted prizes.
-Kicking off on **March 23, 2025**, FartHacks is open to creators of all
-experience levels. Whether you are a first-time hacker or an experienced
-programmer, this is going to be epic. May the loudest and stinkiest projects
-win!
+This two-week, online hackathon is your chance to create something
+extraordinary, connect with a vibrant community of builders, and compete for
+coveted prizes. Kicking off on **March 23, 2025**, FartHacks is open to creators
+of all experience levels. Whether you are a first-time hacker or an experienced
+programmer, this is going to be epic.
 
 ## Why join FartHacks?
 
@@ -128,6 +127,10 @@ No problem! This is an opportunity to get started with Web development
 fundamentals.
 
 ## Join the fun!
+
+Let your ideas rip with the FartLabs community at FartHacks 2025, where you'll
+discover and make an explosive impact beyond the boundaries of science and
+technology.
 
 Spots are limited. Secure your place today. This is an opportunity to build
 something awesome. Push the limits of your creativity, collaborate, and make
