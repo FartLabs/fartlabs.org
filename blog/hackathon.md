@@ -72,12 +72,11 @@ These are the accolades to be awarded to the top projects:
 
 ## Schedule
 
-- **Sunday, March 23, 2025**: Live Opening Ceremony (limited in-person spots
-  available, [sign up now](https://go.fart.tools/hackathon-rsvp); live-streamed
-  for online participants).
+- **5pm PST, Sunday, March 23, 2025**: Live Opening Ceremony; live-streamed for
+  online participants on Discord.
 - **March 23, 2025 - April 6, 2025**: Workshops, online collaboration, and
   project submissions.
-- **April 8, 2025**: Live Closing Ceremony (live-streamed); winner revealed.
+- **April 8, 2025**: Live Closing Ceremony (live-streamed); winners revealed.
 
 ## Resources
 
