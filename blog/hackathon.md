@@ -92,6 +92,11 @@ Here are links and resources to help you get started.
   libraries based on the standard HTTP API for declaring HTTP routers in Deno.
 - [**Fart.css**](https://css.fart.tools/): FartLabs' open-source CSS library.
 
+Opening Ceremony (edited March 24, 2025):
+
+- [Video recording](https://youtu.be/bbeME9BaSKs)
+- [Slidedeck](https://docs.google.com/presentation/d/1-LhqrvFEPZmx6t2sqAV6eDoLzxbxVWic5_7zmDANZDA/edit?usp=sharing)
+
 ## FAQ
 
 ### How many people can be on a team?
