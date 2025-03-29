@@ -92,10 +92,15 @@ Here are links and resources to help you get started.
   libraries based on the standard HTTP API for declaring HTTP routers in Deno.
 - [**Fart.css**](https://css.fart.tools/): FartLabs' open-source CSS library.
 
-Opening Ceremony (edited March 24, 2025):
+**Opening Ceremony (edited March 24, 2025)**:
 
-- [Video recording](https://youtu.be/bbeME9BaSKs)
-- [Slidedeck](https://docs.google.com/presentation/d/1-LhqrvFEPZmx6t2sqAV6eDoLzxbxVWic5_7zmDANZDA/edit?usp=sharing)
+- [YouTube playback](https://youtu.be/bbeME9BaSKs)
+- [Google Slides deck](https://docs.google.com/presentation/d/1-LhqrvFEPZmx6t2sqAV6eDoLzxbxVWic5_7zmDANZDA/edit?usp=sharing)
+
+**ht/htx Workshop (edited March 28, 2025)**:
+
+- [YouTube playback](https://youtu.be/8G6ZNsF27bQ)
+- [Google Slides deck](https://docs.google.com/presentation/d/1rL5VYeAQZJuv16WEhdqfVsyI8v62QL6kCnavexg1ie4/edit?usp=sharing)
 
 ## FAQ
 
@@ -129,6 +134,17 @@ No worries. We will stream it live so everyone can participate!
 
 No problem! This is an opportunity to get started with Web development
 fundamentals.
+
+### Is it too late to join?
+
+Submissions are open until **April 6, 2025** at 12:00 AM PST.
+
+### What's after FartHacks 2025?
+
+- After FartHacks 2025, the party is still going strong! Stay in touch with the
+  FartLabs community on your preferred social media platforms and contrubute to
+  our [open source projects](https://github.com/FartLabs).
+- Due to the success of FartHacks 2025, we aim to plan more awesome events.
 
 ## Join the fun!
 
