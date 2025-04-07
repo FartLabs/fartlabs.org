@@ -97,10 +97,15 @@ Here are links and resources to help you get started.
 - [YouTube playback](https://youtu.be/bbeME9BaSKs)
 - [Google Slides deck](https://docs.google.com/presentation/d/1-LhqrvFEPZmx6t2sqAV6eDoLzxbxVWic5_7zmDANZDA/edit?usp=sharing)
 
-**ht/htx Workshop (edited March 28, 2025)**:
+**ht/htx Workshop (edited March 28, 2025) by Ethan Davidson**:
 
 - [YouTube playback](https://youtu.be/8G6ZNsF27bQ)
 - [Google Slides deck](https://docs.google.com/presentation/d/1rL5VYeAQZJuv16WEhdqfVsyI8v62QL6kCnavexg1ie4/edit?usp=sharing)
+
+**rt/rtx Workshop (edited March 30, 2025) by John Carlo Manuel**:
+
+- [YouTube playback](https://youtu.be/tQq3OK1ND1g)
+- [Google Slides deck](https://docs.google.com/presentation/d/1uD_AvgMYsGOkEDVd2jt3Z1J1N7At6DT2ElQ0s5FsDfo/edit?usp=sharing)
 
 ## FAQ
 
