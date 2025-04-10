@@ -124,7 +124,7 @@ designed for fans of anime music. The user interface is styled with Fart.css and
 engineered using `@fartlabs/htx` for rendering HTML and a `@fartlabs/rt` HTTP
 router.
 
-[![Kusai screenshot of landing page](https://github.com/user-attachments/assets/dcea1b11-71af-4818-b9bb-1fced359c2fd)](https://github.com/FartLabs/hackathon/issues/5)
+[![Kusai screenshot of landing page](./kusai.webp)](https://github.com/FartLabs/hackathon/issues/5)
 
 ### Best use of AI: Fart or Art
 
@@ -133,19 +133,19 @@ model trained on a public dataset of farts to classify audio between "fart" and
 "art" where the user can upload a short .mp3 or .wav audio clip and see if it
 can get it right via a web interface.
 
-[![Fart or Art screenshot of usage](https://github.com/user-attachments/assets/3ae528f2-447f-4777-afae-8f6e2f8a2515)](https://github.com/FartLabs/hackathon/issues/1)
+[![Fart or Art screenshot of usage](./fart-or-art.webp)](https://github.com/FartLabs/hackathon/issues/1)
 
 ### Most practical: Hack Comet
 
 [Hack Comet](https://hack-comet.deno.dev/) is a platform for creating, sharing,
 and managing hackathon team contracts. The contracts clarify responsibilities
 and expectations, ensuring all team members are on the same page. Hack Comet
-uses FartLabs' experimental TypeScript library, `ts-declarative`, to generate a
-JSON Schema validator for the contract model. The project also utilizes
-`@fartlabs/htx` for HTML rendering and `@fartlabs/rt` for the backend.
+leverages `ts-declarative` to generate a JSON Schema validator for the contract
+model. The project also utilizes `@fartlabs/htx` for HTML rendering and
+`@fartlabs/rt` for the backend.
 [View their video demo here](https://www.youtube.com/watch?v=4cGKLzlk4DE).
 
-[![Hack Comet screenshot of landing page](https://github.com/user-attachments/assets/197fc145-329c-43ce-82f6-df96b78a02a0)](https://github.com/FartLabs/hackathon/issues/3)
+[![Hack Comet screenshot of landing page](./hack-comet.webp)](https://github.com/FartLabs/hackathon/issues/3)
 
 ### Most futuristic: Scale of FartLabs
 
