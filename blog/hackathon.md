@@ -9,7 +9,7 @@ date: 2025-03-11
 toc: false
 ---
 
-_UPDATE April 8, 2025: The hackathon has ended and
+_UPDATE April 8, 2025: The hackathon has ended, and
 [winners have been determined](#winning-projects). Thank you to all
 participants!_
 
@@ -164,7 +164,7 @@ entertaining applications.
 
 ### Ethan's favorite: Kusai
 
-Ethan, reviewed the hackathon projects and chose
+Ethan reviewed the hackathon projects and chose
 [Kusai](https://kusai-921.deno.dev/) as his favorite project.
 
 Congratulations and the FartLabs team will be in touch with prize information!
