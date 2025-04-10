@@ -9,8 +9,9 @@ date: 2025-03-11
 toc: false
 ---
 
-_UPDATE April 8, 2025: The hackathon has ended and winners have been determined.
-Thank you to all participants!_
+_UPDATE April 8, 2025: The hackathon has ended and
+[winners have been determined](#winning-projects). Thank you to all
+participants!_
 
 > **tl;dr**: [Join our Discord](https://go.fart.tools/chat)!
 
@@ -127,9 +128,10 @@ router.
 
 ### Best use of AI: Fart or Art
 
-Fart or Art uses a machine learning model trained on a public dataset of farts
-to classify audio between "fart" and "art" where the user can upload a short
-.mp3 or .wav audio clip and see if it can get it right via a web interface.
+[Fart or Art](https://github.com/sidvasu/Fart-or-Art) uses a machine learning
+model trained on a public dataset of farts to classify audio between "fart" and
+"art" where the user can upload a short .mp3 or .wav audio clip and see if it
+can get it right via a web interface.
 
 [![Fart or Art screenshot of usage](https://github.com/user-attachments/assets/3ae528f2-447f-4777-afae-8f6e2f8a2515)](https://github.com/FartLabs/hackathon/issues/1)
 
@@ -154,15 +156,16 @@ ecosystem, utilizing `@fartlabs/rt` for server-side rendering (SSR).
 
 ### Best use of FartLabs tech: Kusai
 
-Kusai also earns the **Best Use of FartLabs Tech** award for its innovative use
-of Fart.css, `@fartlabs/htx`, and `@fartlabs/rt` to create a fun and engaging
-user experience. The project demonstrates the power of FartLabs technology in
-building interactive and entertaining applications.
+[Kusai](https://kusai-921.deno.dev/) also earns the **Best Use of FartLabs
+Tech** award for its innovative use of Fart.css, `@fartlabs/htx`, and
+`@fartlabs/rt` to create a fun and engaging user experience. The project
+demonstrates the power of FartLabs technology in building interactive and
+entertaining applications.
 
 ### Ethan's favorite: Kusai
 
-Ethan, reviewed the hackathon projects and chose **Kusai** as his favorite
-project.
+Ethan, reviewed the hackathon projects and chose
+[Kusai](https://kusai-921.deno.dev/) as his favorite project.
 
 Congratulations and the FartLabs team will be in touch with prize information!
 
