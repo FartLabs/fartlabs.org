@@ -129,9 +129,9 @@ router.
 ### Best use of AI: Fart or Art
 
 [Fart or Art](https://github.com/sidvasu/Fart-or-Art) uses a machine learning
-model trained on a public dataset of farts to classify audio between "fart" and
-"art" where the user can upload a short .mp3 or .wav audio clip and see if it
-can get it right via a web interface.
+model trained on a public dataset to classify audio clips. Users can upload
+short audio clips and the application will accurately determine whether the
+sound is a fart or not a fart through a web interface.
 
 [![Fart or Art screenshot of usage](./fart-or-art.webp)](https://github.com/FartLabs/hackathon/issues/1)
 
@@ -149,10 +149,10 @@ model. The project also utilizes `@fartlabs/htx` for HTML rendering and
 
 ### Most futuristic: Scale of FartLabs
 
-Scale of FartLabs visualizes the progression and complexity of FartLabs
-concepts, showcasing how ideas expand in scale, scope, and imagination we
-evolve. Scale of FartLabs showcases the infinite possibilities of the FartLabs
-ecosystem, utilizing `@fartlabs/rt` for server-side rendering (SSR).
+The **Scale of FartLabs**, inspired by "The Scale of the Universe", illustrates
+the origins and evolution of FartLabs' foundational concepts, highlighting how
+ideas expand in scale, scope, and impact as we evolve. It leverages
+`@fartlabs/rt` for server-side rendering (SSR).
 
 ### Best use of FartLabs tech: Kusai
 
