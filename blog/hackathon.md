@@ -6,7 +6,12 @@ authors:
     username: "EthanThatOneKid"
 topics: ["Community", "Competition"]
 date: 2025-03-11
+toc: false
 ---
+
+_UPDATE April 8, 2025: The hackathon has ended, and
+[winners have been determined](#winning-projects). Thank you to all
+participants!_
 
 > **tl;dr**: [Join our Discord](https://go.fart.tools/chat)!
 
@@ -92,74 +97,80 @@ Here are links and resources to help you get started.
   libraries based on the standard HTTP API for declaring HTTP routers in Deno.
 - [**Fart.css**](https://css.fart.tools/): FartLabs' open-source CSS library.
 
-**Opening Ceremony (edited March 24, 2025)**:
+For those who missed the live sessions
+([YouTube playlist](https://www.youtube.com/playlist?list=PL4gn8nYhtc_6Ktq47RGnDPswBMaY8h754&si=jOIOgYCUCgPi_brl))
+or would like to review the content, the recordings are available below.
 
-- [YouTube playback](https://youtu.be/bbeME9BaSKs)
-- [Google Slides deck](https://docs.google.com/presentation/d/1-LhqrvFEPZmx6t2sqAV6eDoLzxbxVWic5_7zmDANZDA/edit?usp=sharing)
+- **Opening Ceremony**: [YouTube playback](https://youtu.be/bbeME9BaSKs),
+  [Google Slides deck](https://docs.google.com/presentation/d/1-LhqrvFEPZmx6t2sqAV6eDoLzxbxVWic5_7zmDANZDA/edit?usp=sharing)
+- **ht/htx Workshop by Ethan Davidson**:
+  [YouTube playback](https://youtu.be/8G6ZNsF27bQ),
+  [Google Slides deck](https://docs.google.com/presentation/d/1rL5VYeAQZJuv16WEhdqfVsyI8v62QL6kCnavexg1ie4/edit?usp=sharing)
+- **rt/rtx Workshop by John Carlo Manuel**:
+  [YouTube playback](https://youtu.be/tQq3OK1ND1g),
+  [Google Slides deck](https://docs.google.com/presentation/d/1uD_AvgMYsGOkEDVd2jt3Z1J1N7At6DT2ElQ0s5FsDfo/edit?usp=sharing)
+- **Closing Ceremony**: [YouTube playback](https://youtu.be/YRtKfJ6_kcU),
+  [Google Slides deck](https://docs.google.com/presentation/d/1RCcadLHoBgYNTamDiavp8Vs7v1aozvZzotDjMTHnv2o/edit?usp=sharing)
 
-**ht/htx Workshop (edited March 28, 2025) by Ethan Davidson**:
+## Winning projects
 
-- [YouTube playback](https://youtu.be/8G6ZNsF27bQ)
-- [Google Slides deck](https://docs.google.com/presentation/d/1rL5VYeAQZJuv16WEhdqfVsyI8v62QL6kCnavexg1ie4/edit?usp=sharing)
+Thank you all for participating in FartHacks 2025! Here are the winners for each
+vertical.
 
-**rt/rtx Workshop (edited March 30, 2025) by John Carlo Manuel**:
+### Most fun: Kusai
 
-- [YouTube playback](https://youtu.be/tQq3OK1ND1g)
-- [Google Slides deck](https://docs.google.com/presentation/d/1uD_AvgMYsGOkEDVd2jt3Z1J1N7At6DT2ElQ0s5FsDfo/edit?usp=sharing)
+[Kusai](https://kusai-921.deno.dev/) is an engaging anime song guessing game
+designed for fans of anime music. The user interface is styled with Fart.css and
+engineered using `@fartlabs/htx` for rendering HTML and a `@fartlabs/rt` HTTP
+router.
 
-## FAQ
+[![Kusai screenshot of landing page](./kusai.webp)](https://github.com/FartLabs/hackathon/issues/5)
 
-### How many people can be on a team?
+### Best use of AI: Fart or Art
 
-The maximum team size is 4.
+[Fart or Art](https://github.com/sidvasu/Fart-or-Art) uses a machine learning
+model trained on a public dataset of farts to classify audio between "fart" and
+"art" where the user can upload a short .mp3 or .wav audio clip and see if it
+can get it right via a web interface.
 
-### What if I do not have a team?
+[![Fart or Art screenshot of usage](./fart-or-art.webp)](https://github.com/FartLabs/hackathon/issues/1)
 
-No problem, lone wolf! You can submit your project individually.
+### Most practical: Hack Comet
 
-### How many projects can I submit?
+[Hack Comet](https://hack-comet.deno.dev/) is a platform for creating, sharing,
+and managing hackathon team contracts. The contracts clarify responsibilities
+and expectations, ensuring all team members are on the same page. Hack Comet
+leverages `ts-declarative` to generate a JSON Schema validator for the contract
+model. The project also utilizes `@fartlabs/htx` for HTML rendering and
+`@fartlabs/rt` for the backend.
+[View their video demo here](https://www.youtube.com/watch?v=4cGKLzlk4DE).
 
-You can submit as many projects as you want. For example, you may work on a team
-for one project, but you can also submit another project on your own.
+[![Hack Comet screenshot of landing page](./hack-comet.webp)](https://github.com/FartLabs/hackathon/issues/3)
 
-### Do I have to use FartLabs tech?
+### Most futuristic: Scale of FartLabs
 
-No, but using it could help you score the "Best Use of FartLabs Tech" prize.
+Scale of FartLabs visualizes the progression and complexity of FartLabs
+concepts, showcasing how ideas expand in scale, scope, and imagination we
+evolve. Scale of FartLabs showcases the infinite possibilities of the FartLabs
+ecosystem, utilizing `@fartlabs/rt` for server-side rendering (SSR).
 
-### What if I am busy?
+### Best use of FartLabs tech: Kusai
 
-You have two weeks to develop and submit your project. Completion or perfection
-is not required; unique and intriguing concepts are welcome for submission.
+[Kusai](https://kusai-921.deno.dev/) also earns the **Best Use of FartLabs
+Tech** award for its innovative use of Fart.css, `@fartlabs/htx`, and
+`@fartlabs/rt` to create a fun and engaging user experience. The project
+demonstrates the power of FartLabs technology in building interactive and
+entertaining applications.
 
-### What if I cannot attend the in-person event?
+### Ethan's favorite: Kusai
 
-No worries. We will stream it live so everyone can participate!
+Ethan reviewed the hackathon projects and chose
+[Kusai](https://kusai-921.deno.dev/) as his favorite project.
 
-### What if I do not know how to code?
+Congratulations and the FartLabs team will be in touch with prize information!
 
-No problem! This is an opportunity to get started with Web development
-fundamentals.
-
-### Is it too late to join?
-
-Submissions are open until **April 6, 2025** at 12:00 AM PST.
-
-### What's after FartHacks 2025?
-
-- After FartHacks 2025, the party is still going strong! Stay in touch with the
-  FartLabs community on your preferred social media platforms and contrubute to
-  our [open source projects](https://github.com/FartLabs).
-- Due to the success of FartHacks 2025, we aim to plan more awesome events.
-
-## Join the fun!
-
-Let your ideas rip with the FartLabs community at FartHacks 2025, where you'll
-discover and make an explosive impact beyond the boundaries of science and
-technology.
-
-Spots are limited. Secure your place today. This is an opportunity to build
-something awesome. Push the limits of your creativity, collaborate, and make
-your mark at **FartHacks 2025**. We are excited to see what **you** build!
-
-[Join our Discord](https://go.fart.tools/chat) to connect with the community,
-find teammates, and stay up-to-date on the latest news and updates.
+> _**Missed the hackathon?**_
+>
+> There will be more! [Join our Discord](https://go.fart.tools/chat) to connect
+> with the community, find teammates, and stay up-to-date on the latest news and
+> updates.
