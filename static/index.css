@@ -55,3 +55,7 @@
   display: grid;
   gap: 2rem;
 }
+
+.page-heading {
+  z-index: 1;
+}
