@@ -1,17 +1,17 @@
-import { A, DIV, NAV } from "@fartlabs/htx";
+import { DIV, NAV } from "@fartlabs/htx";
+import { Header, Link } from "@fartlabs/css";
 import {
   BlogButton,
   ChatButton,
   GitHubButton,
-} from "#/components/page_button/buttons/mod.ts";
-import {} from "#/components/page_button/buttons/chat_button.tsx";
+} from "#/components/button/mod.ts";
 
 export function PageNav() {
   return (
     <NAV>
-      <A class="fart-header fart-link-visible-on-hover" href="/">
-        FartLabs
-      </A>
+      <Header>
+        <Link href="/" variant="visible-on-hover">FartLabs</Link>
+      </Header>
 
       <DIV class="fart-inline">
         <BlogButton />

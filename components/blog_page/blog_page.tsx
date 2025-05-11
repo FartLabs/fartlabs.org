@@ -1,6 +1,5 @@
+import { HorizontalRule, Section } from "@fartlabs/css";
 import { defaultTitle, PageLayout } from "#/components/page_layout.tsx";
-import { PageSection } from "#/components/page_section.tsx";
-import { PageBreak } from "#/components/page_break.tsx";
 import { BlogHeroSection } from "./blog_hero_section.tsx";
 import { BlogPostPreview } from "./blog_post_preview.tsx";
 import { toTopicID } from "./posts.ts";
@@ -15,13 +14,13 @@ export function BlogPage(props: BlogPageProps) {
     <PageLayout title={`Blog | ${defaultTitle}`}>
       <BlogHeroSection />
 
-      <PageBreak />
+      <HorizontalRule />
 
-      <PageSection class="blog-post-preview-list">
+      <Section class="blog-post-preview-list">
         {getPosts(props.topicID)
           .map((post) => <BlogPostPreview post={post} />)
           .join("")}
-      </PageSection>
+      </Section>
     </PageLayout>
   );
 }

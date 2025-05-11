@@ -1,9 +1,9 @@
 import { DIV, EM, H1, IMG, SCRIPT } from "@fartlabs/htx";
-import { PageSection } from "#/components/page_section.tsx";
+import { Section } from "@fartlabs/css/section";
 
 export function HeroSection() {
   return (
-    <PageSection class="hero">
+    <Section class="hero">
       <H1 id="imagination" class="page-heading">
         Where imagination becomes <EM>software</EM>
       </H1>
@@ -23,7 +23,7 @@ export function HeroSection() {
       </DIV>
 
       <SCRIPT>{PARALLAX_SCRIPT}</SCRIPT>
-    </PageSection>
+    </Section>
   );
 }
 
