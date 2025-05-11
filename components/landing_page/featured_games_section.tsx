@@ -1,9 +1,9 @@
-import { A, DIV, H2, H3, P } from "@fartlabs/htx";
-import { PageSection } from "#/components/page_section.tsx";
+import { DIV, H2, H3, P } from "@fartlabs/htx";
+import { Button, Link, Section } from "@fartlabs/css";
 
 export function FeaturedGamesSection() {
   return (
-    <PageSection>
+    <Section>
       <H2 id="games" class="page-heading">
         Featured games
       </H2>
@@ -11,9 +11,9 @@ export function FeaturedGamesSection() {
       <DIV class="projects">
         <GameSection
           titleHTML={
-            <A href="https://concentration.fart.tools/" class="fart-link">
+            <Link href="https://concentration.fart.tools/">
               Fart Concentration
-            </A>
+            </Link>
           }
           descriptionHTML={
             <P>
@@ -21,19 +21,16 @@ export function FeaturedGamesSection() {
               skills to the test! Study each sound carefully, and try to
               remember where you heard it. Can you match them all? Open source
               on{" "}
-              <A
-                class="fart-button"
-                href="https://github.com/FartLabs/concentration"
-              >
+              <Button href="https://github.com/FartLabs/concentration">
                 GitHub★
-              </A>!
+              </Button>!
             </P>
           }
           tubeColor="magenta"
           tubeGlow
         />
       </DIV>
-    </PageSection>
+    </Section>
   );
 }
 

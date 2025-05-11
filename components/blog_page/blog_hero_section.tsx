@@ -1,18 +1,16 @@
-import { A, H2 } from "@fartlabs/htx";
-import { PageSection } from "#/components/page_section.tsx";
+import { H2 } from "@fartlabs/htx/h2";
+import { Link, Section } from "@fartlabs/css";
 import { BlogTopics } from "./blog_topics.tsx";
 import { topics } from "./data.ts";
 
 export function BlogHeroSection() {
   return (
-    <PageSection class="blog-hero">
+    <Section class="blog-hero">
       <H2 id="blog" class="page-heading">
-        <A class="fart-link-visible-on-hover" href="/blog">
-          Blog
-        </A>
+        <Link href="/blog" variant="visible-on-hover">Blog</Link>
       </H2>
 
       <BlogTopics topics={topics} />
-    </PageSection>
+    </Section>
   );
 }

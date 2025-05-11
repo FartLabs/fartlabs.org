@@ -1,14 +1,14 @@
-import { A, DIV, H2, H3, P, STRONG } from "@fartlabs/htx";
-import { PageSection } from "#/components/page_section.tsx";
+import { DIV, H2, H3, P, STRONG } from "@fartlabs/htx";
+import { Link, Section } from "@fartlabs/css";
 import {
   BlogButton,
   ChatButton,
   GitHubButton,
-} from "#/components/page_button/buttons/mod.ts";
+} from "#/components/button/mod.ts";
 
 export function FAQsSection() {
   return (
-    <PageSection class="faq">
+    <Section class="faq">
       <H2 id="faq" class="page-heading">
         FAQs
       </H2>
@@ -37,7 +37,7 @@ export function FAQsSection() {
           </P>
         }
       />
-    </PageSection>
+    </Section>
   );
 }
 
@@ -51,9 +51,7 @@ function FAQSection(props: FAQSectionProps) {
   return (
     <DIV>
       <H3 id={props.id} class="page-heading-2">
-        <A class="fart-link-visible-on-hover" href={`#${props.id}`}>
-          {props.questionHTML}
-        </A>
+        <Link href={`#${props.id}`}>{props.questionHTML}</Link>
       </H3>
       {props.answerHTML}
     </DIV>

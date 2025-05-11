@@ -1,7 +1,7 @@
 import { BODY, HEAD, HTML, LINK, META, SCRIPT, TITLE } from "@fartlabs/htx";
+import { HorizontalRule } from "@fartlabs/css/horizontal-rule";
 import { PageNav } from "./page_nav.tsx";
 import { PageFoot } from "./page_foot.tsx";
-import { PageBreak } from "#/components/page_break.tsx";
 
 export interface PageLayoutProps {
   title?: string;
@@ -43,7 +43,7 @@ export function PageLayout(props: PageLayoutProps) {
         <BODY>
           <PageNav />
           {props.children?.join("") ?? ""}
-          <PageBreak />
+          <HorizontalRule />
           <PageFoot />
 
           <SCRIPT>{fartCssScript()}</SCRIPT>
