@@ -1,36 +1,15 @@
-import { DIV, EM, H1, IMG, SCRIPT } from "@fartlabs/htx";
-import { Section } from "@fartlabs/css/section";
+import { BR, H1 } from "@fartlabs/htx";
+import { Section, TextGradient, TextSpecial } from "@fartlabs/css";
 
 export function HeroSection() {
   return (
-    <Section class="hero">
+    <Section class="hero background-blob">
       <H1 id="imagination" class="page-heading">
-        Where imagination becomes <EM>software</EM>
+        <TextGradient>
+          The last <TextSpecial>Computer</TextSpecial>
+          <BR />you will ever need
+        </TextGradient>
       </H1>
-
-      {/* https://github.com/wagerfield/parallax?tab=readme-ov-file#2-configuration */}
-      <DIV
-        class="hero-animation-container background-blob"
-        data-relative-input="true"
-      >
-        <DIV data-depth="0.1">
-          <IMG
-            src="baby-goop.png"
-            width="250"
-            alt="FartLabs logo animation"
-          />
-        </DIV>
-      </DIV>
-
-      <SCRIPT>{PARALLAX_SCRIPT}</SCRIPT>
     </Section>
   );
 }
-
-const PARALLAX_SCRIPT = `document.addEventListener("DOMContentLoaded", () => {
-  new Parallax(
-    document.querySelector(".hero-animation-container", {
-      relativeInput: true,
-    })
-  );
-});`;

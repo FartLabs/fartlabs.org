@@ -3,41 +3,23 @@
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  align-items: center;
-  justify-items: center;
-
-  @media (max-width: 800px) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.hero h2 {
-  max-width: 64ch;
-}
-
-.hero-animation-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 125%;
-  height: 125%;
-
-  @media (max-width: 800px) {
-    width: 100%;
-    height: 200%;
-    margin: 5rem auto;
-  }
+  min-height: 50vh;
+  padding: 0 1rem;
 }
 
 .background-blob {
   background-image: url("molecule-blob.svg");
   background-size: cover;
-  background-size: 100%;
-  background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+.page-heading {
+  z-index: 1;
+  color: var(--fart-white);
 }
 
 .projects {
@@ -58,10 +40,6 @@
 .blog-post-preview-list {
   display: grid;
   gap: 2rem;
-}
-
-.page-heading {
-  z-index: 1;
 }
 
 .middle-navbar {

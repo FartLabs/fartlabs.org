@@ -6,7 +6,7 @@
   },
   "imports": {
     "#/": "./",
-    "@fartlabs/css": "jsr:@fartlabs/css@^0.0.4",
+    "@fartlabs/css": "jsr:@fartlabs/css@^0.0.7",
     "@fartlabs/htx": "jsr:@fartlabs/htx@^0.0.10",
     "@std/front-matter": "jsr:@std/front-matter@^1.0.0",
     "@std/fs": "jsr:@std/fs@^1.0.0",
