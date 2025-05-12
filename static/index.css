@@ -1,3 +1,7 @@
+:root {
+  scroll-behavior: smooth;
+}
+
 .hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -58,4 +62,67 @@
 
 .page-heading {
   z-index: 1;
+}
+
+.middle-navbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .middle-navbar {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.1);
+  border-top: none;
+  border-radius: 0 0 1rem 1rem;
+  background-color: rgba(10, 31, 10, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+nav > div {
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fart-cta {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  background: #4a8c56;
+  text-decoration: none;
+}
+
+.fart-cta:hover {
+  background: #5aa366;
+  color: #fff;
 }

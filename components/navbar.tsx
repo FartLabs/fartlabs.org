@@ -1,4 +1,4 @@
-import { DIV, NAV } from "@fartlabs/htx";
+import { A, DIV, NAV } from "@fartlabs/htx";
 import { Header, Link } from "@fartlabs/css";
 import {
   BlogButton,
@@ -9,14 +9,22 @@ import {
 export function Navbar() {
   return (
     <NAV>
-      <Header>
-        <Link href="/" variant="visible-on-hover">FartLabs</Link>
-      </Header>
+      <DIV>
+        <Header class="fart-inline">
+          <Link href="/" variant="visible-on-hover">FartLabs</Link>
+        </Header>
 
-      <DIV class="fart-inline">
-        <BlogButton />
-        <ChatButton />
-        <GitHubButton />
+        <DIV class="fart-inline middle-navbar">
+          <BlogButton />
+          <ChatButton />
+          <GitHubButton />
+        </DIV>
+
+        <DIV class="fart-inline">
+          <A href="#blog-posts" class="fart-cta">
+            Claim
+          </A>
+        </DIV>
       </DIV>
     </NAV>
   );

@@ -1,4 +1,4 @@
-import { SMALL } from "@fartlabs/htx";
+import { SMALL } from "@fartlabs/htx/small";
 import { Button } from "@fartlabs/css/button";
 
 export interface OutboundButtonProps {
