@@ -8,7 +8,6 @@
     "#/": "./",
     "@fartlabs/css": "jsr:@fartlabs/css@^0.0.4",
     "@fartlabs/htx": "jsr:@fartlabs/htx@^0.0.10",
-    "@kitsonk/ga4": "jsr:@kitsonk/ga4@^0.1.0",
     "@std/front-matter": "jsr:@std/front-matter@^1.0.0",
     "@std/fs": "jsr:@std/fs@^1.0.0",
     "@std/http": "jsr:@std/http@^1.0.0",
@@ -26,7 +25,7 @@
   },
   "tasks": {
     "generate": "deno run -A codegen/codegen.ts",
-    "start": "deno run --allow-net --allow-read --allow-env --env main.ts generated",
+    "start": "deno run --allow-net --allow-read main.ts generated",
     "outdated": "deno outdated --update --latest",
     "gs": {
       "description": "Generate and start",

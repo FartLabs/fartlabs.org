@@ -32,6 +32,7 @@ export function PageLayout(props: PageLayoutProps) {
           <TITLE>{title}</TITLE>
           <META name="description" content={description} />
           <Favicon />
+          <GoogleAnalytics />
           {stylesheets
             .map((href) => <LINK rel="stylesheet" href={href} />)
             .join("")}
@@ -92,4 +93,16 @@ function fartCssScript() {
 
   linkElement.href = "${fartCSS}" + url.search;
 });`;
+}
+
+function GoogleAnalytics() {
+  return `<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HQTZKLCP0C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HQTZKLCP0C');
+</script>`;
 }
