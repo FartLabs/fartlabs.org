@@ -92,6 +92,9 @@ nav > div {
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 0.25rem;
+  border-color: var(--fart-primary);
+  border-width: 1px;
+  border-style: solid;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: bold;
@@ -124,10 +127,26 @@ nav > div {
 }
 
 .waitlist-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
   padding: 1.5rem;
   margin-top: 1rem;
   border-radius: 0.5rem;
   border-width: 1px;
-  border-color: var(--fart-lighter-dark-primary);
+  border-color: var(--fart-primary);
   background: var(--fart-dark-primary);
+}
+
+.waitlist-form input {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  height: 2.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-color: var(--fart-primary);
+  background: var(--fart-darker-dark-primary);
+  color: var(--fart-primary);
 }

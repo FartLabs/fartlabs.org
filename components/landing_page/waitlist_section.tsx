@@ -1,5 +1,5 @@
 import { FORM, H2, INPUT, LABEL, P, SPAN } from "@fartlabs/htx";
-import { Button, Link, Section, TextGradient } from "@fartlabs/css";
+import { Section, TextGradient } from "@fartlabs/css";
 
 export function WaitlistSection() {
   return (
@@ -21,8 +21,11 @@ export function WaitlistSection() {
 export function WaitlistForm() {
   return (
     <FORM class="waitlist-form">
-      <LABEL for="email">
-        Email address <SPAN style="color: red">*</SPAN>
+      <LABEL
+        for="email"
+        style="color: var(--fart-primary); font-weight: bold;"
+      >
+        Email address<SPAN style="color: red">*</SPAN>
       </LABEL>
       <INPUT
         id="email"
@@ -30,6 +33,12 @@ export function WaitlistForm() {
         type="email"
         placeholder="you@fartlabs.org"
         required="true"
+      />
+      <INPUT
+        type="submit"
+        value="Claim Your Computer"
+        class="fart-cta"
+        style="background: #4a8c56; color: var(--fart-white)"
       />
     </FORM>
   );
