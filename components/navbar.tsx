@@ -11,7 +11,13 @@ export function Navbar() {
     <NAV>
       <DIV>
         <Header class="fart-inline">
-          <Link href="/" variant="visible-on-hover">FartLabs</Link>
+          <Link
+            href="/"
+            variant="visible-on-hover"
+            style="font-weight: bold; color: var(--fart-primary)"
+          >
+            FartLabs
+          </Link>
         </Header>
 
         <DIV class="fart-inline middle-navbar">
