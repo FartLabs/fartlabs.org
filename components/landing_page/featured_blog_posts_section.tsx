@@ -1,5 +1,5 @@
 import { H2 } from "@fartlabs/htx";
-import { Section } from "@fartlabs/css/section";
+import { Section, TextGradient } from "@fartlabs/css";
 import type { Post } from "#/components/blog_page/posts.ts";
 import { BlogPostPreviewList } from "#/components/blog_page/blog_post_preview_list.tsx";
 
@@ -11,7 +11,7 @@ export function FeaturedBlogPostsSection(props: FeaturedBlogPostsSectionProps) {
   return (
     <Section>
       <H2 id="blog-posts" class="page-heading">
-        Featured blog posts
+        <TextGradient>Featured blog posts</TextGradient>
       </H2>
 
       <BlogPostPreviewList posts={props.posts} />

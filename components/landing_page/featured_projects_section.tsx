@@ -1,11 +1,11 @@
 import { CODE, DIV, H2, H3, P, SPAN } from "@fartlabs/htx";
-import { Link, Section, Sparkle } from "@fartlabs/css";
+import { Link, Section, Sparkle, TextGradient } from "@fartlabs/css";
 
 export function FeaturedProjectsSection() {
   return (
     <Section>
       <H2 id="projects" class="page-heading">
-        Featured projects
+        <TextGradient>Featured projects</TextGradient>
       </H2>
 
       <DIV class="projects">

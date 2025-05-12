@@ -1,5 +1,5 @@
 import { DIV, H2, H3, P } from "@fartlabs/htx";
-import { Link, Section, Sparkle } from "@fartlabs/css";
+import { Link, Section, Sparkle, TextGradient } from "@fartlabs/css";
 import {
   BlogButton,
   ChatButton,
@@ -10,7 +10,7 @@ export function FAQsSection() {
   return (
     <Section class="faq">
       <H2 id="faq" class="page-heading">
-        FAQs
+        <TextGradient>FAQs</TextGradient>
       </H2>
 
       <FAQSection
