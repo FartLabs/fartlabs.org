@@ -1,5 +1,5 @@
 import { CODE, DIV, H2, H3, P, SPAN } from "@fartlabs/htx";
-import { Link, Section } from "@fartlabs/css";
+import { Link, Section, Sparkle } from "@fartlabs/css";
 
 export function FeaturedProjectsSection() {
   return (
@@ -65,8 +65,8 @@ export function FeaturedProjectsSection() {
           }
           descriptionHTML={
             <P>
-              CSS library reusable across{" "}
-              <SPAN class="sparkle">fart-tastic</SPAN> frontends. Visit{" "}
+              CSS library reusable across <Sparkle>fart-tastic</Sparkle>{" "}
+              frontends. Visit{" "}
               <Link href="https://css.fart.tools/">css.fart.tools</Link>{" "}
               to learn more!
             </P>

@@ -1,5 +1,5 @@
-import { DIV, H2, H3, P, STRONG } from "@fartlabs/htx";
-import { Link, Section } from "@fartlabs/css";
+import { DIV, H2, H3, P } from "@fartlabs/htx";
+import { Link, Section, Sparkle } from "@fartlabs/css";
 import {
   BlogButton,
   ChatButton,
@@ -20,8 +20,9 @@ export function FAQsSection() {
           <P>
             We maintain ethical, economically-sustainable, built-to-last,
             organic, open-source software&hellip; out the wazoo! We specialize
-            in <STRONG class="sparkle">imagination-driven</STRONG>{" "}
-            development. Learn more about us on our <BlogButton />.
+            in <Sparkle style="font-weight: bold;">imagination-driven</Sparkle>
+            {" "}
+            software development. Learn more about us on our <BlogButton />.
           </P>
         }
       />
