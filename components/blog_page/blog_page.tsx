@@ -1,5 +1,5 @@
 import { HorizontalRule, Section } from "@fartlabs/css";
-import { defaultTitle, PageLayout } from "#/components/page_layout.tsx";
+import { defaultTitle, Layout } from "../layout.tsx";
 import { BlogHeroSection } from "./blog_hero_section.tsx";
 import { BlogPostPreview } from "./blog_post_preview.tsx";
 import { toTopicID } from "./posts.ts";
@@ -11,7 +11,7 @@ export interface BlogPageProps {
 
 export function BlogPage(props: BlogPageProps) {
   return (
-    <PageLayout title={`Blog | ${defaultTitle}`}>
+    <Layout title={`Blog | ${defaultTitle}`}>
       <BlogHeroSection />
 
       <HorizontalRule />
@@ -21,7 +21,7 @@ export function BlogPage(props: BlogPageProps) {
           .map((post) => <BlogPostPreview post={post} />)
           .join("")}
       </Section>
-    </PageLayout>
+    </Layout>
   );
 }
 

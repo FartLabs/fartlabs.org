@@ -1,9 +1,9 @@
 import { BODY, HEAD, HTML, LINK, META, SCRIPT, TITLE } from "@fartlabs/htx";
 import { HorizontalRule } from "@fartlabs/css/horizontal-rule";
-import { PageNav } from "./page_nav.tsx";
-import { PageFoot } from "./page_foot.tsx";
+import { Navbar } from "./navbar.tsx";
+import { PageFoot } from "./foot.tsx";
 
-export interface PageLayoutProps {
+export interface LayoutProps {
   title?: string;
   description?: string;
   headHTML?: string;
@@ -15,42 +15,42 @@ export const defaultTitle =
 export const defaultDescription =
   "Software out the wazoo! We specialize in imagination-driven development.";
 
-export function PageLayout(props: PageLayoutProps) {
+export function Layout(props: LayoutProps) {
   const title = props.title ?? defaultTitle;
   const description = props.description ?? defaultDescription;
+  const layout = (
+    <HTML lang="en">
+      <HEAD>
+        <META charset="UTF-8" />
+        <META name="theme-color" content="#004021" />
+        <META
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        />
+        <TITLE>{title}</TITLE>
+        <META name="description" content={description} />
+        <Favicon />
+        <GoogleAnalytics />
+        {stylesheets
+          .map((href) => <LINK rel="stylesheet" href={href} />)
+          .join("")}
+        {scripts
+          .map((src) => <SCRIPT src={src} />)
+          .join("")}
+        {props.headHTML ?? ""}
+      </HEAD>
+      <BODY>
+        <Navbar />
+        {props.children?.join("") ?? ""}
+        <HorizontalRule />
+        <PageFoot />
 
-  return "<!DOCTYPE html>\n" +
-    (
-      <HTML lang="en">
-        <HEAD>
-          <META charset="UTF-8" />
-          <META name="theme-color" content="#004021" />
-          <META
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <TITLE>{title}</TITLE>
-          <META name="description" content={description} />
-          <Favicon />
-          <GoogleAnalytics />
-          {stylesheets
-            .map((href) => <LINK rel="stylesheet" href={href} />)
-            .join("")}
-          {scripts
-            .map((src) => <SCRIPT src={src} />)
-            .join("")}
-          {props.headHTML ?? ""}
-        </HEAD>
-        <BODY>
-          <PageNav />
-          {props.children?.join("") ?? ""}
-          <HorizontalRule />
-          <PageFoot />
+        <SCRIPT>{fartCssScript()}</SCRIPT>
+      </BODY>
+    </HTML>
+  );
 
-          <SCRIPT>{fartCssScript()}</SCRIPT>
-        </BODY>
-      </HTML>
-    );
+  return "<!DOCTYPE html>" + layout;
 }
 
 function Favicon() {

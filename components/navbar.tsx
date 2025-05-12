@@ -6,7 +6,7 @@ import {
   GitHubButton,
 } from "#/components/button/mod.ts";
 
-export function PageNav() {
+export function Navbar() {
   return (
     <NAV>
       <Header>

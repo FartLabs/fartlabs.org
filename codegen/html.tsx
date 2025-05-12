@@ -3,7 +3,7 @@ import { aliases, posts, topics } from "#/components/blog_page/data.ts";
 import { toTopicID } from "#/components/blog_page/posts.ts";
 import { BlogPage } from "#/components/blog_page/blog_page.tsx";
 import { BlogPostPage } from "#/components/blog_page/blog_post_page.tsx";
-import { PageRedirect } from "#/components/page_redirect.tsx";
+import { RedirectPage } from "#/components/redirect_page.tsx";
 import { renderPostImageResponse } from "#/codegen/og.tsx";
 
 /**
@@ -39,7 +39,7 @@ export async function generateHTML(directory: string) {
     await Deno.mkdir(`${directory}/${alias}`, { recursive: true });
     await Deno.writeTextFile(
       `${directory}/${alias}/index.html`,
-      <PageRedirect to={destination} />,
+      <RedirectPage to={destination} />,
     );
   }
 }

@@ -1,6 +1,6 @@
 import { HEAD, HTML, META, TITLE } from "@fartlabs/htx";
 
-export function PageRedirect(props: { to: string }) {
+export function RedirectPage(props: { to: string }) {
   return (
     <HTML>
       <HEAD>

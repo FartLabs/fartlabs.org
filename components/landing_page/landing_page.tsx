@@ -1,4 +1,4 @@
-import { PageLayout } from "#/components/page_layout.tsx";
+import { Layout } from "../layout.tsx";
 import { featuredPosts } from "#/components/blog_page/data.ts";
 import { HeroSection } from "./hero_section.tsx";
 import { FeaturedBlogPostsSection } from "./featured_blog_posts_section.tsx";
@@ -9,13 +9,13 @@ import { FAQsSection } from "./faqs_section.tsx";
 
 export function LandingPage() {
   return (
-    <PageLayout>
+    <Layout>
       <HeroSection />
       <FeaturedBlogPostsSection posts={featuredPosts} />
       <FeaturedProjectsSection />
       <FeaturedGamesSection />
       <RiseSection />
       <FAQsSection />
-    </PageLayout>
+    </Layout>
   );
 }

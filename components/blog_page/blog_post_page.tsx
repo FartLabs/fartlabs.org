@@ -1,7 +1,7 @@
 import { LINK } from "@fartlabs/htx";
 import { HorizontalRule, Section } from "@fartlabs/css";
 import type { Post } from "#/components/blog_page/posts.ts";
-import { PageLayout } from "#/components/page_layout.tsx";
+import { Layout } from "../layout.tsx";
 import { BlogPostPreview } from "#/components/blog_page/blog_post_preview.tsx";
 
 export interface BlogPostPageProps {
@@ -10,7 +10,7 @@ export interface BlogPostPageProps {
 
 export function BlogPostPage(props: BlogPostPageProps) {
   return (
-    <PageLayout
+    <Layout
       title={props.post.attrs.title}
       description={props.post.attrs.description}
       headHTML={[
@@ -27,7 +27,7 @@ export function BlogPostPage(props: BlogPostPageProps) {
       <Section class="markdown-body">
         {props.post.html}
       </Section>
-    </PageLayout>
+    </Layout>
   );
 }
 

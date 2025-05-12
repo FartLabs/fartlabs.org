@@ -13,6 +13,8 @@ const colors = {
   blue: "#1589FF",
 };
 
+// TODO: Save all tube CSS in a single file.
+
 export async function generateTubes(directory: string) {
   const verticesAmount = 100;
   const totalBubbles = 30;
