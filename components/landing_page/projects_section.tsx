@@ -1,9 +1,9 @@
-import { A, CODE, DIV, H2, H3, P, SPAN } from "@fartlabs/htx";
-import { PageSection } from "#/components/page_section.tsx";
+import { CODE, DIV, H2, H3, P, SPAN } from "@fartlabs/htx";
+import { Link, Section } from "@fartlabs/css";
 
 export function ProjectsSection() {
   return (
-    <PageSection>
+    <Section>
       <H2 id="projects" class="page-heading">
         Featured projects
       </H2>
@@ -11,17 +11,13 @@ export function ProjectsSection() {
       <DIV class="projects">
         <ProjectSection
           titleHTML={
-            <A href="https://github.com/FartLabs/jsonx" class="fart-link">
-              jsonx
-            </A>
+            <Link href="https://github.com/FartLabs/jsonx">jsonx</Link>
           }
           descriptionHTML={
             <P>
               JSX runtime and compiler for composing JSON data. Visit the
               official{" "}
-              <A href="https://jsonx.fart.tools/" class="fart-link">
-                jsonx website
-              </A>{" "}
+              <Link href="https://jsonx.fart.tools/">jsonx website</Link>{" "}
               to play with JSON like never before!
             </P>
           }
@@ -31,16 +27,13 @@ export function ProjectsSection() {
         />
 
         <ProjectSection
-          titleHTML={
-            <A href="https://github.com/FartLabs/htx" class="fart-link">htx</A>
-          }
+          titleHTML={<Link href="https://github.com/FartLabs/htx">htx</Link>}
           descriptionHTML={
             <P>
               Library of <CODE>@fartlabs/jsonx</CODE>{" "}
               components for composing HTML content. Visit the generated{" "}
-              <A href="https://jsr.io/@fartlabs/htx" class="fart-link">
-                API documentation
-              </A>{" "}
+              <Link href="https://jsr.io/@fartlabs/htx">API documentation</Link>
+              {" "}
               to learn more!
             </P>
           }
@@ -50,17 +43,14 @@ export function ProjectsSection() {
         />
 
         <ProjectSection
-          titleHTML={
-            <A href="https://github.com/FartLabs/rtx" class="fart-link">rtx</A>
-          }
+          titleHTML={<Link href="https://github.com/FartLabs/rtx">rtx</Link>}
           descriptionHTML={
             <P>
               Library of <CODE>@fartlabs/jsonx</CODE> components for composing
               {" "}
-              <CODE>@fartlabs/rt</CODE> routers. Visit the generated{" "}
-              <A href="https://jsr.io/@fartlabs/rtx" class="fart-link">
-                API documentation
-              </A>{" "}
+              <CODE>@fartlabs/rt</CODE> routers. Visit the generated
+              <Link href="https://jsr.io/@fartlabs/rtx">API documentation</Link>
+              {" "}
               to learn more!
             </P>
           }
@@ -71,17 +61,13 @@ export function ProjectsSection() {
 
         <ProjectSection
           titleHTML={
-            <A href="https://github.com/FartLabs/fart.css" class="fart-link">
-              Fart.css
-            </A>
+            <Link href="https://github.com/FartLabs/fart.css">Fart.css</Link>
           }
           descriptionHTML={
             <P>
               CSS library reusable across{" "}
-              <SPAN class="sparkle">fart-tastic</SPAN> frontends. Visit{" "}
-              <A href="https://css.fart.tools/" class="fart-link">
-                css.fart.tools
-              </A>{" "}
+              <SPAN class="sparkle">fart-tastic</SPAN> frontends. Visit
+              <Link href="https://css.fart.tools/">css.fart.tools</Link>{" "}
               to learn more!
             </P>
           }
@@ -90,7 +76,7 @@ export function ProjectsSection() {
           topics={["css"]}
         />
       </DIV>
-    </PageSection>
+    </Section>
   );
 }
 

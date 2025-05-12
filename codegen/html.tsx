@@ -1,12 +1,9 @@
 import { LandingPage } from "#/components/landing_page/mod.ts";
-import { PeoplePage } from "#/components/people_page/mod.ts";
 import { aliases, posts, topics } from "#/components/blog_page/data.ts";
 import { toTopicID } from "#/components/blog_page/posts.ts";
 import { BlogPage } from "#/components/blog_page/blog_page.tsx";
 import { BlogPostPage } from "#/components/blog_page/blog_post_page.tsx";
-import { CpuPage } from "#/components/cpu_page/cpu_page.tsx";
 import { PageRedirect } from "#/components/page_redirect.tsx";
-import people from "#/static/people.json" with { type: "json" };
 import { renderPostImageResponse } from "#/codegen/og.tsx";
 
 /**
@@ -14,15 +11,6 @@ import { renderPostImageResponse } from "#/codegen/og.tsx";
  */
 export async function generateHTML(directory: string) {
   await Deno.writeTextFile(`${directory}/index.html`, <LandingPage />);
-
-  await Deno.mkdir(`${directory}/people`, { recursive: true });
-  await Deno.writeTextFile(
-    `${directory}/people/index.html`,
-    <PeoplePage people={people} />,
-  );
-
-  await Deno.mkdir(`${directory}/cpu`, { recursive: true });
-  await Deno.writeTextFile(`${directory}/cpu/index.html`, <CpuPage />);
 
   await Deno.mkdir(`${directory}/blog`, { recursive: true });
   await Deno.writeTextFile(`${directory}/blog/index.html`, <BlogPage />);

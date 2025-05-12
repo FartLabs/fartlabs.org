@@ -1,4 +1,5 @@
-import { A, DIV, H1, H3, P, SPAN, TIME } from "@fartlabs/htx";
+import { DIV, H1, H3, P, SPAN, TIME } from "@fartlabs/htx";
+import { Link } from "@fartlabs/css/link";
 import type { Post, PostAuthor } from "./posts.ts";
 import { BlogTopics } from "./blog_topics.tsx";
 
@@ -7,9 +8,7 @@ export function BlogPostPreview(props: { post: Post; level?: 1 | 3 }) {
   return (
     <DIV class="post-preview">
       <Heading>
-        <A class="fart-link" href={`/${props.post.id}`}>
-          {props.post.attrs.title}
-        </A>
+        <Link href={`/${props.post.id}`}>{props.post.attrs.title}</Link>
       </Heading>
       <BlogPostDate date={props.post.attrs.date} /> |{" "}
       <SPAN class="post-authors">
@@ -35,8 +34,8 @@ function BlogPostDate(props: { date: Date }) {
 
 function BlogPostAuthor(props: { author: PostAuthor }) {
   return (
-    <A href={`https://github.com/${props.author.username}`} class="fart-link">
+    <Link href={`https://github.com/${props.author.username}`}>
       {props.author.name}
-    </A>
+    </Link>
   );
 }

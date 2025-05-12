@@ -1,8 +1,7 @@
 import { LINK } from "@fartlabs/htx";
+import { HorizontalRule, Section } from "@fartlabs/css";
 import type { Post } from "#/components/blog_page/posts.ts";
 import { PageLayout } from "#/components/page_layout.tsx";
-import { PageSection } from "#/components/page_section.tsx";
-import { PageBreak } from "#/components/page_break.tsx";
 import { BlogPostPreview } from "#/components/blog_page/blog_post_preview.tsx";
 
 export interface BlogPostPageProps {
@@ -19,15 +18,15 @@ export function BlogPostPage(props: BlogPostPageProps) {
         ...og(props.post),
       ].join("")}
     >
-      <PageSection>
+      <Section>
         <BlogPostPreview post={props.post} level={1} />
-      </PageSection>
+      </Section>
 
-      <PageBreak />
+      <HorizontalRule />
 
-      <PageSection class="markdown-body">
+      <Section class="markdown-body">
         {props.post.html}
-      </PageSection>
+      </Section>
     </PageLayout>
   );
 }

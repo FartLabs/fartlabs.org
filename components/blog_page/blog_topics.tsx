@@ -1,4 +1,5 @@
-import { A, DIV } from "@fartlabs/htx";
+import { DIV } from "@fartlabs/htx/div";
+import { Button } from "@fartlabs/css/button";
 import { toTopicID } from "./posts.ts";
 
 export interface BlogTopicsProps {
@@ -21,8 +22,8 @@ export interface BlogTopicProps {
 
 export function BlogTopic(props: BlogTopicProps) {
   return (
-    <A class="fart-button" href={`/blog/${toTopicID(props.topic)}`}>
+    <Button href={`/blog/${toTopicID(props.topic)}`}>
       {props.topic}
-    </A>
+    </Button>
   );
 }
