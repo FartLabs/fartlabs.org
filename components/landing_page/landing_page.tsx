@@ -6,6 +6,7 @@ import { FeaturedProjectsSection } from "./featured_projects_section.tsx";
 import { FeaturedGamesSection } from "./featured_games_section.tsx";
 import { RiseSection } from "./rise_section.tsx";
 import { FAQsSection } from "./faqs_section.tsx";
+import { WaitlistSection } from "./waitlist_section.tsx";
 
 export function LandingPage() {
   return (
@@ -16,6 +17,7 @@ export function LandingPage() {
       <FeaturedGamesSection />
       <RiseSection />
       <FAQsSection />
+      <WaitlistSection />
     </Layout>
   );
 }
