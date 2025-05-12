@@ -67,7 +67,7 @@ export function FeaturedProjectsSection() {
             <P>
               CSS library reusable across{" "}
               <SPAN class="sparkle">fart-tastic</SPAN> frontends. Visit{" "}
-              <Link href="https://css.fart.tools/">css.fart.tools</Link>
+              <Link href="https://css.fart.tools/">css.fart.tools</Link>{" "}
               to learn more!
             </P>
           }
