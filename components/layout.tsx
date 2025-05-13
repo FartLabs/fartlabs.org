@@ -74,6 +74,7 @@ const stylesheets = [
 const scripts = [
   "https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js",
   "https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js",
+  "https://www.google.com/recaptcha/api.js?render=6LfJUC8rAAAAALwhkiZR_6YxdJGF9Q42jOkAXfa1",
 ];
 
 function fartCssScript() {
