@@ -144,10 +144,11 @@ footer {
   align-items: center;
   padding: 1.5rem;
   margin-top: 1rem;
-  border-radius: 0.5rem;
-  border-width: 1px;
+  border-radius: 0.25rem;
   border-color: var(--fart-primary);
-  background: var(--fart-dark-primary);
+  border-width: 1px;
+  border-style: solid;
+  background: var(--fart-darker-dark-primary);
 }
 
 .waitlist-form {
@@ -166,7 +167,7 @@ footer {
   font-size: 1rem;
   line-height: 1.5rem;
   border-color: var(--fart-primary);
-  background: var(--fart-darker-dark-primary);
+  background: var(--fart-dark-primary);
   color: var(--fart-primary);
 }
 

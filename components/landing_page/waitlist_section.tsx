@@ -27,11 +27,10 @@ ${
     }
   );`,
   ).join("\n\n")
-}});
+}
+});
 
-async function submitWaitlistForm(event) {
-  event.preventDefault();
-
+async function submitWaitlistForm() {
   const formContainer = document.querySelector(".waitlist-form-container");
   formContainer.innerHTML = \`<waitlist-form>${(
   <WaitlistFormButton state="loading" />
@@ -40,7 +39,6 @@ async function submitWaitlistForm(event) {
   const token = await new Promise((resolve, reject) => {
     // https://developers.google.com/recaptcha/docs/v3#programmatically_invoke_the_challenge
     grecaptcha.ready(() => {
-      console.log("grecaptcha ready");
       grecaptcha.execute(
         // https://github.com/FartLabs/cpu.fartlabs.org/blob/6d1fbcc48efa186db592afb8b207b0ebc06132b4/lib/recaptcha.ts
         "6LfJUC8rAAAAALwhkiZR_6YxdJGF9Q42jOkAXfa1",
@@ -120,7 +118,7 @@ function WaitlistForm() {
         required="true"
       />
       <SLOT name="message" />
-      <SLOT name="submit">
+      <SLOT name="submit-button">
         <WaitlistFormButton />
       </SLOT>
     </FORM>
@@ -131,14 +129,13 @@ function WaitlistFormButton(props: { state?: "loading" }) {
   return (
     <INPUT
       id="waitlist-form-submit"
-      slot="submit"
+      slot="submit-button"
       type="submit"
       value={props.state === "loading" ? "Loading..." : "Claim Your Computer"}
       disabled={String(props.state === "loading")}
       class="fart-cta"
       style="background: #4a8c56; color: var(--fart-white)"
-      // TODO: Fix bug where event does not fire when button is disabled.
-      onclick="submitWaitlistForm(event)"
+      onclick="function(event) { event.preventDefault(); submitWaitlistForm(); }"
     />
   );
 }
