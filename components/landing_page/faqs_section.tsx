@@ -20,7 +20,7 @@ export function FAQsSection() {
           <P>
             We maintain ethical, economically-sustainable, built-to-last,
             organic, open-source software&hellip; out the wazoo! We specialize
-            in <Sparkle style="font-weight: bold;">imagination-driven</Sparkle>
+            in <Sparkle style="font-weight: bold">imagination-driven</Sparkle>
             {" "}
             software development. Learn more about us on our <BlogButton />.
           </P>
