@@ -25,7 +25,7 @@
   },
   "tasks": {
     "generate": "deno run -A codegen/codegen.ts",
-    "start": "deno run --allow-net --allow-read main.ts generated",
+    "start": "deno serve --allow-net --allow-read main.ts generated",
     "outdated": "deno outdated --update --latest",
     "gs": {
       "description": "Generate and start",

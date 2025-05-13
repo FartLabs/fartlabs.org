@@ -136,7 +136,7 @@ nav > div {
   border-radius: 0.5rem;
   border-width: 1px;
   border-color: var(--fart-primary);
-  background: var(--fart-darker-dark-primary);
+  background: var(--fart-dark-primary);
 }
 
 .waitlist-form input {
@@ -147,11 +147,18 @@ nav > div {
   font-size: 1rem;
   line-height: 1.5rem;
   border-color: var(--fart-primary);
-  background: var(--fart-primary);
+  background: var(--fart-darker-dark-primary);
   color: var(--fart-primary);
 }
 
-.waitlist-success {}
+/* .waitlist-success {
+}
+
+.waitlist-loading {
+}
+
+.waitlist-error {
+} */
 
 .waitlist-warning {
   padding: 0.75rem;

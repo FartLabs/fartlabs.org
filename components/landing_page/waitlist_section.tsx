@@ -1,9 +1,67 @@
-import { BR, DIV, FORM, H2, INPUT, LABEL, P, SPAN } from "@fartlabs/htx";
+import {
+  BR,
+  DIV,
+  FORM,
+  H2,
+  INPUT,
+  LABEL,
+  P,
+  SCRIPT,
+  SLOT,
+  SPAN,
+  TEMPLATE,
+} from "@fartlabs/htx";
 import { Link, Section, TextGradient } from "@fartlabs/css";
+
+const script = `document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".waitlist-form");
+  const formContainer = document.querySelector(".waitlist-form-container");
+
+  // Set up custom elements for waitlist states.
+${
+  ["waitlist-error", "waitlist-warning", "waitlist-success", "waitlist-loading"]
+    .map(
+      (component) =>
+        `  customElements.define(
+    "${component}",
+    class extends HTMLElement {
+      constructor() {
+        super();
+        document.body.appendChild(document.getElementById("${component}-template").cloneNode(true));
+      }
+    }
+  );`,
+    ).join("\n\n")
+}
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    formContainer.innerHTML = "<waitlist-loading></waitlist-loading>";
+
+    const formData = new FormData(form);
+    const email = formData.get("email");
+    const response = await fetch("/waitlist", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    });
+    if (!response.ok) {
+      // TODO: Handle error email already registered.
+      // https://github.com/FartLabs/cpu.fartlabs.org/blob/6d1fbcc48efa186db592afb8b207b0ebc06132b4/components/sign-up-form.tsx#L58
+      const { error } = await response.json();
+      formContainer.innerHTML = \`<waitlist-error>\${error}</waitlist-error>\`;
+      return;
+    }
+
+    formContainer.innerHTML = "<waitlist-success></waitlist-success>";
+  });
+});`;
 
 export function WaitlistSection() {
   return (
     <Section id="waitlist">
+      <SCRIPT>{script}</SCRIPT>
+
       <H2>
         <TextGradient>Claim Your Free FartLabs Computer Today!</TextGradient>
       </H2>
@@ -13,8 +71,14 @@ export function WaitlistSection() {
         computing.
       </P>
 
-      {/* TODO: Set up waitlist logic. */}
-      <WaitlistForm />
+      <DIV class="waitlist-form-container">
+        <WaitlistForm />
+      </DIV>
+
+      <WaitlistErrorTemplate />
+      <WaitlistWarningTemplate />
+      <WaitlistSuccessTemplate />
+      <WaitlistLoadingTemplate />
     </Section>
   );
 }
@@ -24,7 +88,7 @@ function WaitlistForm() {
     <FORM class="waitlist-form">
       <LABEL
         for="email"
-        style="color: var(--fart-primary); font-weight: bold;"
+        style="color: var(--fart-primary); font-weight: bold"
       >
         Email address<SPAN style="color: red">*</SPAN>
       </LABEL>
@@ -42,6 +106,63 @@ function WaitlistForm() {
         style="background: #4a8c56; color: var(--fart-white)"
       />
     </FORM>
+  );
+}
+
+function WaitlistErrorTemplate() {
+  return (
+    <TEMPLATE id="waitlist-error-template">
+      <DIV class="waitlist-error">
+        <SLOT name="content">
+          <P style="color: red">An error occurred. Please try again later.</P>
+        </SLOT>
+      </DIV>
+    </TEMPLATE>
+  );
+}
+
+function WaitlistWarningTemplate() {
+  return (
+    <TEMPLATE id="waitlist-warning-template">
+      <DIV class="waitlist-warning">
+        <SLOT name="content">
+          <P>
+            Thank you! This email is already registered. Join our{" "}
+            <Link href="https://go.fart.tools/chat">community on Discord</Link>.
+          </P>
+        </SLOT>
+      </DIV>
+    </TEMPLATE>
+  );
+}
+
+function WaitlistSuccessTemplate() {
+  return (
+    <TEMPLATE id="waitlist-success-template">
+      <DIV class="waitlist-success">
+        <P style="color: #4a8c56">
+          Thank you for joining the waitlist! We will notify you when we are
+          ready to launch.
+        </P>
+        <BR />
+        <P>
+          In the meantime, join our{" "}
+          <Link href="https://go.fart.tools/chat">community on Discord</Link>
+          {" "}
+          to stay updated!
+        </P>
+      </DIV>
+    </TEMPLATE>
+  );
+}
+
+function WaitlistLoadingTemplate() {
+  return (
+    <TEMPLATE id="waitlist-loading-template">
+      <DIV class="waitlist-loading">
+        <P>Loading...</P>
+      </DIV>
+    </TEMPLATE>
   );
 }
 
