@@ -1,5 +1,4 @@
 import { BODY, HEAD, HTML, LINK, META, SCRIPT, TITLE } from "@fartlabs/htx";
-import { HorizontalRule } from "@fartlabs/css/horizontal-rule";
 import { Navbar } from "./navbar.tsx";
 import { PageFoot } from "./foot.tsx";
 
@@ -10,10 +9,9 @@ export interface LayoutProps {
   children?: string[];
 }
 
-export const defaultTitle =
-  "FartLabs, where imagination becomes great software";
+export const defaultTitle = "FartLabs, where imagination becomes software";
 export const defaultDescription =
-  "Software out the wazoo! We specialize in imagination-driven development.";
+  "Software out the wazoo! Claim your free FartLabs Computer today.";
 
 export function Layout(props: LayoutProps) {
   const title = props.title ?? defaultTitle;
@@ -42,7 +40,6 @@ export function Layout(props: LayoutProps) {
       <BODY>
         <Navbar />
         {props.children?.join("") ?? ""}
-        <HorizontalRule />
         <PageFoot />
 
         <SCRIPT>{fartCssScript()}</SCRIPT>
