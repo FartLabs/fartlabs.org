@@ -9,7 +9,7 @@ export function HeroSection() {
         <BR />you will ever need
       </H1>
 
-      <A href="#blog-posts" class="fart-cta">
+      <A href="#waitlist" class="fart-cta">
         Claim your free computer
       </A>
     </Section>
