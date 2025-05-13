@@ -69,7 +69,7 @@ nav {
   border-color: rgba(255, 255, 255, 0.1);
   border-top: none;
   border-radius: 0 0 1rem 1rem;
-  background-color: rgba(10, 31, 10, 0.8);
+  background-color: rgba(15, 42, 15, 0.8);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   margin: 0 auto;
