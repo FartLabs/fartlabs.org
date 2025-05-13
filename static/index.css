@@ -126,17 +126,25 @@ nav > div {
   font-size: 1rem;
 }
 
-.waitlist-form {
+.waitlist-form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
   padding: 1.5rem;
   margin-top: 1rem;
   border-radius: 0.5rem;
   border-width: 1px;
   border-color: var(--fart-primary);
   background: var(--fart-dark-primary);
+}
+
+.waitlist-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
 }
 
 .waitlist-form input {
