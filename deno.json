@@ -8,7 +8,7 @@
     "#/": "./",
     "@fartlabs/css": "jsr:@fartlabs/css@^0.0.8",
     "@fartlabs/htx": "jsr:@fartlabs/htx@^0.0.10",
-    "@libsql/client": "npm:@libsql/client@^0.15.5",
+    "@libsql/client": "npm:@libsql/client@^0.15.6",
     "@std/front-matter": "jsr:@std/front-matter@^1.0.0",
     "@std/fs": "jsr:@std/fs@^1.0.0",
     "@std/http": "jsr:@std/http@^1.0.0",

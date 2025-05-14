@@ -12,6 +12,8 @@ import {
 } from "@fartlabs/htx";
 import { Link, Section, TextGradient } from "@fartlabs/css";
 
+// TODO: Refactor without customElements.
+
 const script = `document.addEventListener("DOMContentLoaded", () => {
   // Set up custom elements for the waitlist form.
 ${
@@ -22,7 +24,9 @@ ${
     class extends HTMLElement {
       constructor() {
         super();
-        document.body.appendChild(document.getElementById("${component}-template").cloneNode(true));
+        const template = document.getElementById("${component}-template");
+        const content = document.importNode(template.content, true);
+        this.appendChild(content);
       }
     }
   );`,
@@ -30,7 +34,10 @@ ${
 }
 });
 
-async function submitWaitlistForm() {
+async function submitWaitlistForm(event) {
+  event.preventDefault();
+  event.stopPropagation();
+
   const formContainer = document.querySelector(".waitlist-form-container");
   formContainer.innerHTML = \`<waitlist-form>${(
   <WaitlistFormButton state="loading" />
@@ -47,8 +54,7 @@ async function submitWaitlistForm() {
     });
   });
 
-  const form = document.querySelector(".waitlist-form");
-  const formData = new FormData(form);
+  const formData = new FormData(event.target);
   const email = formData.get("email");
   const response = await fetch("/waitlist", {
     method: "POST",
@@ -103,7 +109,8 @@ function WaitlistFormTemplate() {
 
 function WaitlistForm() {
   return (
-    <FORM class="waitlist-form">
+    // @ts-expect-error onsubmit
+    <FORM class="waitlist-form" onsubmit="submitWaitlistForm(event)">
       <LABEL
         for="email"
         style="color: var(--fart-primary); font-weight: bold"
@@ -131,11 +138,11 @@ function WaitlistFormButton(props: { state?: "loading" }) {
       id="waitlist-form-submit"
       slot="submit-button"
       type="submit"
-      value={props.state === "loading" ? "Loading..." : "Claim Your Computer"}
-      disabled={String(props.state === "loading")}
       class="fart-cta"
       style="background: #4a8c56; color: var(--fart-white)"
-      onclick="function(event) { event.preventDefault(); submitWaitlistForm(); }"
+      {...(props.state === "loading"
+        ? { value: "Loading...", disabled: "true" }
+        : { value: "Claim Your Computer" })}
     />
   );
 }
