@@ -27,7 +27,7 @@ export function Navbar() {
         </DIV>
 
         <DIV class="fart-inline">
-          <A href="#blog-posts" class="fart-cta">
+          <A href="#waitlist" class="fart-cta">
             Claim
           </A>
         </DIV>

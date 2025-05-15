@@ -24,6 +24,7 @@
 
 .hero .page-heading {
   color: var(--fart-primary);
+  text-align: center;
 }
 
 .projects {
@@ -98,11 +99,11 @@ footer {
 }
 
 .fart-cta {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.25rem;
+  border-color: var(--fart-primary);
+  border-width: 1px;
+  border-style: solid;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: bold;
@@ -121,6 +122,10 @@ footer {
   text-decoration: none;
 }
 
+.fart-cta:visited {
+  color: #fff;
+}
+
 .fart-cta:hover {
   color: #fff;
   background: #5aa366;
@@ -129,7 +134,76 @@ footer {
     0 10px 10px -5px rgba(74, 140, 86, 0.1);
 }
 
-.hero .fart-cta {
-  padding: 1rem 1.5rem;
+#waitlist {
+  scroll-margin-top: 1rem;
+}
+
+.waitlist-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  border-color: var(--fart-primary);
+  border-width: 1px;
+  border-style: solid;
+  background: var(--fart-darker-dark-primary);
+}
+
+.waitlist-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.waitlist-form input {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  height: 2.5rem;
   font-size: 1rem;
+  line-height: 1.5rem;
+  border-color: var(--fart-primary);
+  background: var(--fart-dark-primary);
+  color: var(--fart-primary);
+}
+
+.waitlist-success {
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--fart-white);
+  background: rgba(74, 140, 86, 0.1);
+  border-color: #4a8c56;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.waitlist-error {
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+  border-color: #ef4444;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.waitlist-warning {
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #fbbf24;
+  background: rgba(255, 204, 0, 0.1);
+  border-color: #fbbf24;
+  border-width: 1px;
+  border-style: solid;
 }
