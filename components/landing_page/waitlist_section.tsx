@@ -90,6 +90,7 @@ export function WaitlistSection() {
 }
 
 function WaitlistForm(props: { message?: string; button?: string }) {
+  // TODO: Support disabled JavaScript.
   return (
     // @ts-expect-error onsubmit
     <FORM class="waitlist-form" onsubmit="submitWaitlistForm(event)">
