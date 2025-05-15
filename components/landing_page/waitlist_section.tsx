@@ -1,4 +1,5 @@
 import {
+  BR,
   DIV,
   FORM,
   H2,
@@ -6,42 +7,20 @@ import {
   LABEL,
   P,
   SCRIPT,
-  SLOT,
   SPAN,
-  TEMPLATE,
 } from "@fartlabs/htx";
 import { Link, Section, TextGradient } from "@fartlabs/css";
 
-// TODO: Refactor without customElements.
-
-const script = `document.addEventListener("DOMContentLoaded", () => {
-  // Set up custom elements for the waitlist form.
-${
-  ["waitlist-form"].map(
-    (component) =>
-      `  customElements.define(
-    "${component}",
-    class extends HTMLElement {
-      constructor() {
-        super();
-        const template = document.getElementById("${component}-template");
-        const content = document.importNode(template.content, true);
-        this.appendChild(content);
-      }
-    }
-  );`,
-  ).join("\n\n")
-}
-});
-
-async function submitWaitlistForm(event) {
+const script = `async function submitWaitlistForm(event) {
   event.preventDefault();
   event.stopPropagation();
 
   const formContainer = document.querySelector(".waitlist-form-container");
-  formContainer.innerHTML = \`<waitlist-form>${(
-  <WaitlistFormButton state="loading" />
-)}</waitlist-form>\`;
+  formContainer.innerHTML = \`${(
+  <WaitlistForm
+    button={<WaitlistFormButton state="loading" />}
+  />
+)}\`;
 
   const token = await new Promise((resolve, reject) => {
     // https://developers.google.com/recaptcha/docs/v3#programmatically_invoke_the_challenge
@@ -65,15 +44,28 @@ async function submitWaitlistForm(event) {
     // TODO: Handle error email already registered.
     // https://github.com/FartLabs/cpu.fartlabs.org/blob/6d1fbcc48efa186db592afb8b207b0ebc06132b4/components/sign-up-form.tsx#L58
     const { error } = await response.json();
-    formContainer.innerHTML = \`<waitlist-form>${(
-  <WaitlistFormMessage state="error" />
-)}</waitlist-form>\`;
+    if (error === "Email already registered") {
+      formContainer.innerHTML = \`${(
+  <WaitlistForm
+    message={<WaitlistFormMessage state="already-registered" />}
+  />
+)}\`;
+      return;
+    }
+
+    formContainer.innerHTML = \`${(
+  <WaitlistForm
+    message={<WaitlistFormMessage state="error" />}
+  />
+)}\`;
     return;
   }
 
-  formContainer.innerHTML = \`<waitlist-form>${(
-  <WaitlistFormMessage state="success" />
-)}</waitlist-form>\`;
+  formContainer.innerHTML = \`${(
+  <WaitlistForm
+    message={<WaitlistFormMessage state="success" />}
+  />
+)}\`;
 }`;
 
 export function WaitlistSection() {
@@ -93,21 +85,11 @@ export function WaitlistSection() {
       <DIV class="waitlist-form-container">
         <WaitlistForm />
       </DIV>
-
-      <WaitlistFormTemplate />
     </Section>
   );
 }
 
-function WaitlistFormTemplate() {
-  return (
-    <TEMPLATE id="waitlist-form-template">
-      <WaitlistForm />
-    </TEMPLATE>
-  );
-}
-
-function WaitlistForm() {
+function WaitlistForm(props: { message?: string; button?: string }) {
   return (
     // @ts-expect-error onsubmit
     <FORM class="waitlist-form" onsubmit="submitWaitlistForm(event)">
@@ -124,10 +106,8 @@ function WaitlistForm() {
         placeholder="you@fartlabs.org"
         required="true"
       />
-      <SLOT name="message" />
-      <SLOT name="submit-button">
-        <WaitlistFormButton />
-      </SLOT>
+      {props.message ?? ""}
+      {props.button ?? <WaitlistFormButton />}
     </FORM>
   );
 }
@@ -171,13 +151,13 @@ function WaitlistFormMessage(
     }
 
     case "success": {
+      // TODO: Add confetti!
       return (
         <DIV class="waitlist-success" slot="message">
-          <P style="color: #4a8c56">
-            Thank you for joining the waitlist! We will notify you when we are
-            ready to launch.
-          </P>
+          <Check />
           <P>
+            Thank you for joining the waitlist! We will notify you when we are
+            ready to launch.<BR />
             In the meantime, join our{" "}
             <Link href="https://go.fart.tools/chat">community on Discord</Link>
             {" "}
@@ -191,4 +171,23 @@ function WaitlistFormMessage(
       throw new Error("Invalid waitlist message state");
     }
   }
+}
+
+function Check() {
+  // https://github.com/FartLabs/cpu.fartlabs.org/blob/6d1fbcc48efa186db592afb8b207b0ebc06132b4/components/sign-up-form.tsx#L84C13-L97C19
+  return `<div style="display: flex; justify-content: center; align-items: center; margin: 0 auto; border-radius: 50%; width: 3rem; height: 3rem; background: #4a8c56">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M20 6 9 17l-5-5"></path>
+  </svg>
+</div>`;
 }
