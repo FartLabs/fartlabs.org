@@ -9,9 +9,8 @@ export interface LayoutProps {
   children?: string[];
 }
 
-export const defaultTitle = "FartLabs, where imagination becomes software";
-export const defaultDescription =
-  "Software out the wazoo! Claim your free FartLabs Computer today.";
+export const defaultTitle = "FartLabs, software out the Wazoo";
+export const defaultDescription = "Claim your free FartLabs Computer today.";
 
 export function Layout(props: LayoutProps) {
   const title = props.title ?? defaultTitle;

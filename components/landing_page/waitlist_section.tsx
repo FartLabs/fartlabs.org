@@ -123,7 +123,7 @@ function WaitlistFormButton(props: { state?: "loading" }) {
       style="background: #4a8c56; color: var(--fart-white)"
       {...(props.state === "loading"
         ? { value: "Loading...", disabled: "true" }
-        : { value: "Claim Your Computer" })}
+        : { value: "Claim your free Computer" })}
     />
   );
 }

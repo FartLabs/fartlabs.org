@@ -34,7 +34,7 @@ export function FAQsSection() {
           <P>
             Join our <ChatButton />{" "}
             to hang out with us and other members of the community. Also, check
-            out our org on <GitHubButton />.
+            out our open source projects on <GitHubButton />.
           </P>
         }
       />

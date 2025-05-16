@@ -10,7 +10,7 @@ export function FutureOfComputingSection() {
 
       <P>
         Our system adapts to you, not the other way around. With{" "}
-        <Sparkle>imagination-driven</Sparkle>{" "}
+        <Sparkle style="font-weight: bold">imagination-driven</Sparkle>{" "}
         development, the computer responds to your thoughts and needs, creating
         a truly personalized experience.
       </P>
