@@ -28,7 +28,7 @@ export function Layout(props: LayoutProps) {
         <TITLE>{title}</TITLE>
         <META name="description" content={description} />
         <Favicon />
-        <GoogleAnalytics />
+        <GoogleAnalyticsScript />
         {stylesheets
           .map((href) => <LINK rel="stylesheet" href={href} />)
           .join("")}
@@ -42,7 +42,8 @@ export function Layout(props: LayoutProps) {
         {props.children?.join("") ?? ""}
         <PageFoot />
 
-        <SCRIPT>{fartCssScript()}</SCRIPT>
+        <FartCssScript />
+        <ClaimFocusScript />
       </BODY>
     </HTML>
   );
@@ -54,7 +55,7 @@ function Favicon() {
   return <LINK rel="icon" href="/fl-logo.png" />;
 }
 
-const fartCSS = "https://css.fart.tools/fart.css";
+const fartCss = "https://css.fart.tools/fart.css";
 
 const stylesheets = [
   "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark-dimmed.min.css",
@@ -66,7 +67,7 @@ const stylesheets = [
   "/tube-orange.css",
   "/tube-blue.css",
   "/tube-empty.css",
-  fartCSS,
+  fartCss,
   "/cubes.css",
   "/index.css",
 ];
@@ -77,23 +78,51 @@ const scripts = [
   "https://www.google.com/recaptcha/api.js?render=6LfJUC8rAAAAALwhkiZR_6YxdJGF9Q42jOkAXfa1",
 ];
 
-function fartCssScript() {
-  return `document.addEventListener("DOMContentLoaded", function() {
+function FartCssScript() {
+  return (
+    <SCRIPT>
+      {`document.addEventListener("DOMContentLoaded", function() {
   const url = new URL(window.location.href);
   if (url.searchParams.size === 0) {
     return;
   }
 
-  const linkElement = document.head.querySelector('link[href="${fartCSS}"]');
+  const linkElement = document.head.querySelector('link[href="${fartCss}"]');
   if (linkElement === null) {
     return;
   }
 
-  linkElement.href = "${fartCSS}" + url.search;
-});`;
+  linkElement.href = "${fartCss}" + url.search;
+});`}
+    </SCRIPT>
+  );
 }
 
-function GoogleAnalytics() {
+/**
+ * ClaimFocusScript is a script that focuses the email input when the
+ * `#waitlist` link is clicked.
+ */
+function ClaimFocusScript() {
+  return (
+    <SCRIPT>
+      {`document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("a[href='#waitlist']").forEach((a) => {
+    a.addEventListener("click", (e) => {
+      const emailInput = document.querySelector("#email");
+      if (!emailInput) {
+        return;
+      }
+
+      e.preventDefault();
+      emailInput.focus();
+    });
+  });
+});`}
+    </SCRIPT>
+  );
+}
+
+function GoogleAnalyticsScript() {
   return `<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQTZKLCP0C"></script>
 <script>
