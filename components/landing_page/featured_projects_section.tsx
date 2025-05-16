@@ -5,7 +5,7 @@ export function FeaturedProjectsSection() {
   return (
     <Section>
       <H2 id="projects" class="page-heading">
-        <TextGradient>Featured projects</TextGradient>
+        <TextGradient>Open source projects</TextGradient>
       </H2>
 
       <DIV class="projects">

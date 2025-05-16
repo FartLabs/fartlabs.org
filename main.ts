@@ -39,7 +39,7 @@ export default {
             const client = createClient({ url, authToken });
             await client
               .batch([
-                "CREATE TABLE IF NOT EXISTS waitlist (email TEXT PRIMARY KEY)",
+                "CREATE TABLE IF NOT EXISTS waitlist (email TEXT PRIMARY KEY, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)",
                 {
                   sql: "SELECT email FROM waitlist WHERE email = ?",
                   args: [body.email],

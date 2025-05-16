@@ -18,11 +18,11 @@ export function FAQsSection() {
         questionHTML="What is FartLabs?"
         answerHTML={
           <P>
-            We maintain ethical, economically-sustainable, built-to-last,
-            organic, open-source software&hellip; out the wazoo! We specialize
-            in <Sparkle style="font-weight: bold">imagination-driven</Sparkle>
-            {" "}
-            software development. Learn more about us on our <BlogButton />.
+            We ethically develop economically-sustainable, built-to-last,
+            open-source software libraries with an emphasis on
+            <Sparkle style="font-weight: bold">imagination-driven</Sparkle>{" "}
+            development, empowering developers to create their own durable
+            software projects. Learn more about us on our <BlogButton />. blog.
           </P>
         }
       />
