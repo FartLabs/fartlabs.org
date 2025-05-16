@@ -8,6 +8,11 @@ export function FeaturedProjectsSection() {
         <TextGradient>Open source projects</TextGradient>
       </H2>
 
+      <P>
+        We are the creators, maintainers, and contributors of critical
+        infrastructure projects in the TypeScript ecosystem.
+      </P>
+
       <DIV class="projects">
         <ProjectSection
           titleHTML={
@@ -80,15 +85,6 @@ export function FeaturedProjectsSection() {
   );
 }
 
-type TubeColor =
-  | "blue"
-  | "turquoise"
-  | "purple"
-  | "yellow"
-  | "magenta"
-  | "green"
-  | "orange";
-
 export interface ProjectSectionProps {
   titleHTML: string;
   descriptionHTML: string;
@@ -96,6 +92,15 @@ export interface ProjectSectionProps {
   tubeColor?: TubeColor;
   tubeGlow: boolean;
 }
+
+export type TubeColor =
+  | "blue"
+  | "turquoise"
+  | "purple"
+  | "yellow"
+  | "magenta"
+  | "green"
+  | "orange";
 
 function ProjectSection(props: ProjectSectionProps) {
   const className = `project${

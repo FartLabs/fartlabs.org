@@ -1,5 +1,6 @@
 import { DIV, H2, H3, P } from "@fartlabs/htx";
 import { Button, Link, Section, TextGradient } from "@fartlabs/css";
+import type { TubeColor } from "./featured_projects_section.tsx";
 
 export function FeaturedGamesSection() {
   return (
@@ -33,15 +34,6 @@ export function FeaturedGamesSection() {
     </Section>
   );
 }
-
-type TubeColor =
-  | "blue"
-  | "turquoise"
-  | "purple"
-  | "yellow"
-  | "magenta"
-  | "green"
-  | "orange";
 
 export interface ProjectSectionProps {
   titleHTML: string;

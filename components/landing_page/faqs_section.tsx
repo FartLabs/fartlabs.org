@@ -19,7 +19,7 @@ export function FAQsSection() {
         answerHTML={
           <P>
             We ethically develop economically-sustainable, built-to-last,
-            open-source software libraries with an emphasis on
+            open-source software libraries with an emphasis on{" "}
             <Sparkle style="font-weight: bold">imagination-driven</Sparkle>{" "}
             development, empowering developers to create their own durable
             software projects. Learn more about us on our <BlogButton />. blog.
