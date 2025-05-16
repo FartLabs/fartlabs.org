@@ -1,5 +1,5 @@
-import { H2, P } from "@fartlabs/htx";
-import { Section, Shake, Sparkle, TextGradient } from "@fartlabs/css";
+import { H2, P, SPAN } from "@fartlabs/htx";
+import { Section, Sparkle, TextGradient } from "@fartlabs/css";
 
 export function FutureOfComputingSection() {
   return (
@@ -18,7 +18,7 @@ export function FutureOfComputingSection() {
       <P>
         For researchers, scientists, academics, students, and engineers, the
         {" "}
-        <Shake style="font-weight: bold">FartLabs Computer</Shake>{" "}
+        <SPAN style="font-weight: bold">FartLabs Computer</SPAN>{" "}
         provides a unique platform for exploring new ideas and collaborating on
         projects. With its intuitive interface and flexible architecture, it's
         the perfect tool for anyone looking to push the boundaries of
