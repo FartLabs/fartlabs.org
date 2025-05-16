@@ -33,7 +33,6 @@
     },
     "outdated": "deno outdated --update --latest"
   },
-
   "fmt": {
     "exclude": ["generated"]
   },
