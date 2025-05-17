@@ -1,5 +1,5 @@
-import { DIV, H2, H3, P, STRONG } from "@fartlabs/htx";
-import { Link, Section } from "@fartlabs/css";
+import { DIV, H2, H3, P } from "@fartlabs/htx";
+import { Link, Section, Sparkle, TextGradient } from "@fartlabs/css";
 import {
   BlogButton,
   ChatButton,
@@ -10,7 +10,7 @@ export function FAQsSection() {
   return (
     <Section class="faq">
       <H2 id="faq" class="page-heading">
-        FAQs
+        <TextGradient>FAQs</TextGradient>
       </H2>
 
       <FAQSection
@@ -18,10 +18,11 @@ export function FAQsSection() {
         questionHTML="What is FartLabs?"
         answerHTML={
           <P>
-            We maintain ethical, economically-sustainable, built-to-last,
-            organic, open-source software&hellip; out the wazoo! We specialize
-            in <STRONG class="sparkle">imagination-driven</STRONG>{" "}
-            development. Learn more about us on our <BlogButton />.
+            We ethically develop economically-sustainable, built-to-last,
+            open-source software libraries with an emphasis on{" "}
+            <Sparkle style="font-weight: bold">imagination-driven</Sparkle>{" "}
+            development, empowering developers to create their own durable
+            software projects. Learn more about us on our <BlogButton />.
           </P>
         }
       />
@@ -33,7 +34,7 @@ export function FAQsSection() {
           <P>
             Join our <ChatButton />{" "}
             to hang out with us and other members of the community. Also, check
-            out our org on <GitHubButton />.
+            out our open source projects on <GitHubButton />.
           </P>
         }
       />

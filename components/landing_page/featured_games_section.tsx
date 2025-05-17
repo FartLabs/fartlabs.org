@@ -1,15 +1,18 @@
 import { DIV, H2, H3, P } from "@fartlabs/htx";
-import { Button, Link, Section } from "@fartlabs/css";
+import { Button, Link, Section, TextGradient } from "@fartlabs/css";
+import type { TubeColor } from "#/components/border-tube.tsx";
+import { BorderTube } from "#/components/border-tube.tsx";
 
 export function FeaturedGamesSection() {
   return (
     <Section>
       <H2 id="games" class="page-heading">
-        Featured games
+        <TextGradient>Featured games</TextGradient>
       </H2>
 
       <DIV class="projects">
         <GameSection
+          color="magenta"
           titleHTML={
             <Link href="https://concentration.fart.tools/">
               Fart Concentration
@@ -26,38 +29,23 @@ export function FeaturedGamesSection() {
               </Button>!
             </P>
           }
-          tubeColor="magenta"
-          tubeGlow
         />
       </DIV>
     </Section>
   );
 }
 
-type TubeColor =
-  | "blue"
-  | "turquoise"
-  | "purple"
-  | "yellow"
-  | "magenta"
-  | "green"
-  | "orange";
-
 export interface ProjectSectionProps {
   titleHTML: string;
   descriptionHTML: string;
-  tubeColor?: TubeColor;
-  tubeGlow: boolean;
+  color: TubeColor;
 }
 
 function GameSection(props: ProjectSectionProps) {
-  const className = `project${
-    props.tubeColor ? ` border-tube-${props.tubeColor}` : ""
-  }${props.tubeGlow ? " glow" : ""}`;
   return (
-    <DIV class={className}>
+    <BorderTube glow color={props.color} class="project">
       <H3 class="project-title">{props.titleHTML}</H3>
       {props.descriptionHTML}
-    </DIV>
+    </BorderTube>
   );
 }
