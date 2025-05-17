@@ -1,5 +1,7 @@
 import { CODE, DIV, H2, H3, P, SPAN } from "@fartlabs/htx";
 import { Link, Section, Sparkle, TextGradient } from "@fartlabs/css";
+import type { TubeColor } from "#/components/border-tube.tsx";
+import { BorderTube } from "#/components/border-tube.tsx";
 
 export function FeaturedProjectsSection() {
   return (
@@ -26,8 +28,7 @@ export function FeaturedProjectsSection() {
               to play with JSON like never before!
             </P>
           }
-          tubeColor="magenta"
-          tubeGlow
+          color="magenta"
           topics={["deno", "jsr.io", "jsx/tsx"]}
         />
 
@@ -42,8 +43,7 @@ export function FeaturedProjectsSection() {
               to learn more!
             </P>
           }
-          tubeColor="purple"
-          tubeGlow
+          color="purple"
           topics={["deno", "html", "jsr.io", "jsx/tsx"]}
         />
 
@@ -59,8 +59,7 @@ export function FeaturedProjectsSection() {
               to learn more!
             </P>
           }
-          tubeColor="blue"
-          tubeGlow
+          color="blue"
           topics={["deno", "http", "jsr.io", "jsx/tsx"]}
         />
 
@@ -76,8 +75,7 @@ export function FeaturedProjectsSection() {
               to learn more!
             </P>
           }
-          tubeColor="green"
-          tubeGlow
+          color="green"
           topics={["css"]}
         />
       </DIV>
@@ -89,29 +87,16 @@ export interface ProjectSectionProps {
   titleHTML: string;
   descriptionHTML: string;
   topics: string[];
-  tubeColor?: TubeColor;
-  tubeGlow: boolean;
+  color: TubeColor;
 }
 
-export type TubeColor =
-  | "blue"
-  | "turquoise"
-  | "purple"
-  | "yellow"
-  | "magenta"
-  | "green"
-  | "orange";
-
 function ProjectSection(props: ProjectSectionProps) {
-  const className = `project${
-    props.tubeColor ? ` border-tube-${props.tubeColor}` : ""
-  }${props.tubeGlow ? " glow" : ""}`;
   return (
-    <DIV class={className}>
+    <BorderTube glow color={props.color} class="project">
       <H3 class="project-title">{props.titleHTML}</H3>
       {props.descriptionHTML}
       <ProjectTopics topics={props.topics} />
-    </DIV>
+    </BorderTube>
   );
 }
 

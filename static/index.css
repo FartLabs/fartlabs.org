@@ -143,13 +143,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
-  margin-top: 1rem;
-  border-radius: 0.25rem;
   border-color: var(--fart-primary);
-  border-width: 1px;
-  border-style: solid;
   background: var(--fart-darker-dark-primary);
+  padding: 3rem;
 }
 
 .waitlist-form {
@@ -158,6 +154,8 @@ footer {
   justify-content: center;
   gap: 1rem;
   width: 100%;
+  flex: 1 1 auto;
+  margin: auto 2rem;
 }
 
 .waitlist-form input {

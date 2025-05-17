@@ -10,6 +10,7 @@ import {
   SPAN,
 } from "@fartlabs/htx";
 import { Link, Section, TextGradient } from "@fartlabs/css";
+import { BorderTube } from "#/components/border-tube.tsx";
 
 const script = `async function submitWaitlistForm(event) {
   event.preventDefault();
@@ -82,9 +83,9 @@ export function WaitlistSection() {
         computing.
       </P>
 
-      <DIV class="waitlist-form-container">
+      <BorderTube glow color="green" class="waitlist-form-container">
         <WaitlistForm />
-      </DIV>
+      </BorderTube>
     </Section>
   );
 }
