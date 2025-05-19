@@ -14,7 +14,7 @@ export function HeroSection() {
         </DIV>
       </DIV>
 
-      <A href="#waitlist" class="fart-cta">
+      <A href="/#waitlist" class="fart-cta">
         Claim your free computer
       </A>
 
