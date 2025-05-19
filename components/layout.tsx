@@ -31,9 +31,6 @@ export function Layout(props: LayoutProps) {
         {stylesheets
           .map((href) => <LINK rel="stylesheet" href={href} />)
           .join("")}
-        {scripts
-          .map((src) => <SCRIPT src={src} />)
-          .join("")}
         {props.headHTML ?? ""}
       </HEAD>
       <BODY>
@@ -42,7 +39,6 @@ export function Layout(props: LayoutProps) {
         <PageFoot />
 
         <FartCssScript />
-        <ClaimFocusScript />
       </BODY>
     </HTML>
   );
@@ -56,8 +52,7 @@ function Favicon() {
 
 const fartCss = "https://css.fart.tools/fart.css";
 
-const stylesheets = [
-  "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark-dimmed.min.css",
+const tubes = [
   "/tube-green.css",
   "/tube-purple.css",
   "/tube-yellow.css",
@@ -66,15 +61,14 @@ const stylesheets = [
   "/tube-orange.css",
   "/tube-blue.css",
   "/tube-empty.css",
-  fartCss,
-  "/cubes.css",
-  "/index.css",
 ];
 
-const scripts = [
-  "https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js",
-  "https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js",
-  "https://www.google.com/recaptcha/api.js?render=6LfJUC8rAAAAALwhkiZR_6YxdJGF9Q42jOkAXfa1",
+const stylesheets = [
+  "/index.css",
+  ...tubes,
+  "/cubes.css",
+  fartCss,
+  "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark-dimmed.min.css",
 ];
 
 function FartCssScript() {
@@ -92,30 +86,6 @@ function FartCssScript() {
   }
 
   linkElement.href = "${fartCss}" + url.search;
-});`}
-    </SCRIPT>
-  );
-}
-
-/**
- * ClaimFocusScript is a script that focuses the email input when the
- * `#waitlist` link is clicked.
- */
-function ClaimFocusScript() {
-  return (
-    <SCRIPT>
-      {`document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll("a[href='#waitlist']").forEach((a) => {
-    a.addEventListener("click", (e) => {
-      const emailInput = document.querySelector("#email");
-      if (!emailInput) {
-        return;
-      }
-
-      e.preventDefault();
-      emailInput.focus();
-    });
-  });
 });`}
     </SCRIPT>
   );

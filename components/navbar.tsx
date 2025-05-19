@@ -8,7 +8,7 @@ import {
 
 export function Navbar() {
   return (
-    <NAV>
+    <NAV class="fart-navbar">
       <DIV>
         <Header class="fart-inline">
           <Link
@@ -20,14 +20,14 @@ export function Navbar() {
           </Link>
         </Header>
 
-        <DIV class="fart-inline middle-navbar">
+        <DIV class="middle-navbar">
           <BlogButton />
           <ChatButton />
           <GitHubButton />
         </DIV>
 
         <DIV class="fart-inline">
-          <A href="#waitlist" class="fart-cta">
+          <A href="/#waitlist" class="fart-cta">
             Claim
           </A>
         </DIV>

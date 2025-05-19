@@ -54,7 +54,6 @@ function renderTubeCSS(name: string, color: string) {
   border-image-repeat: stretch stretch;
   border-image-source: url("tube-${name}.svg");
   border-style: solid;
-  padding: 20px;
   border-radius: 2em;
 }
 

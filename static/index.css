@@ -59,7 +59,7 @@
   }
 }
 
-nav {
+.fart-navbar {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -77,7 +77,7 @@ nav {
   padding: 0 1rem;
 }
 
-nav > div {
+.fart-navbar > div {
   display: flex;
   height: 4rem;
   align-items: center;
