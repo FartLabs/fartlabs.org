@@ -1,5 +1,5 @@
 import { CODE, DIV, H2, H3, P, SPAN } from "@fartlabs/htx";
-import { Link, Section, Sparkle, TextGradient } from "@fartlabs/css";
+import { Link, Section, Sparkle } from "@fartlabs/css";
 import type { TubeColor } from "#/components/border-tube.tsx";
 import { BorderTube } from "#/components/border-tube.tsx";
 
@@ -7,7 +7,7 @@ export function FeaturedProjectsSection() {
   return (
     <Section>
       <H2 id="projects" class="page-heading">
-        <TextGradient>Open source projects</TextGradient>
+        Open source projects
       </H2>
 
       <P>

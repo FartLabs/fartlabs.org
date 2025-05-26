@@ -1,14 +1,12 @@
 import { DIV, H2, H3, P } from "@fartlabs/htx";
-import { Button, Link, Section, TextGradient } from "@fartlabs/css";
+import { Button, Link, Section } from "@fartlabs/css";
 import type { TubeColor } from "#/components/border-tube.tsx";
 import { BorderTube } from "#/components/border-tube.tsx";
 
 export function FeaturedGamesSection() {
   return (
     <Section>
-      <H2 id="games" class="page-heading">
-        <TextGradient>Featured games</TextGradient>
-      </H2>
+      <H2 id="games" class="page-heading">Featured games</H2>
 
       <DIV class="projects">
         <GameSection

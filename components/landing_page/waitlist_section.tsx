@@ -9,7 +9,7 @@ import {
   SCRIPT,
   SPAN,
 } from "@fartlabs/htx";
-import { Link, Section, TextGradient } from "@fartlabs/css";
+import { Link, Section } from "@fartlabs/css";
 import { BorderTube } from "#/components/border-tube.tsx";
 
 const script = `async function submitWaitlistForm(event) {
@@ -75,7 +75,7 @@ export function WaitlistSection() {
       <SCRIPT>{script}</SCRIPT>
 
       <H2>
-        <TextGradient>Claim your free FartLabs Computer today!</TextGradient>
+        Claim your free FartLabs Computer today!
       </H2>
 
       <P>

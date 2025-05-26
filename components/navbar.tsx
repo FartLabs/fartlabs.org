@@ -21,9 +21,7 @@ export function Navbar() {
         </Header>
 
         <DIV class="middle-navbar">
-          <BlogButton />
-          <ChatButton />
-          <GitHubButton />
+          <BlogButton /> <ChatButton /> <GitHubButton />
         </DIV>
 
         <DIV class="fart-inline">
