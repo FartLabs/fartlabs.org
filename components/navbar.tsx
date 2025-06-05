@@ -20,9 +20,7 @@ export function Navbar() {
           </Link>
         </Header>
 
-        <DIV class="middle-navbar">
-          <BlogButton /> <ChatButton /> <GitHubButton />
-        </DIV>
+        <LinkGroup class="middle-navbar fart-inline" />
 
         <DIV class="fart-inline">
           <A href="/#waitlist" class="fart-cta">
@@ -31,5 +29,15 @@ export function Navbar() {
         </DIV>
       </DIV>
     </NAV>
+  );
+}
+
+export function LinkGroup(props: { class: string }) {
+  return (
+    <DIV class={props.class}>
+      <BlogButton />
+      <ChatButton />
+      <GitHubButton />
+    </DIV>
   );
 }

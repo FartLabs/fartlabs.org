@@ -1,9 +1,5 @@
 import { A, DIV, FOOTER } from "@fartlabs/htx";
-import {
-  BlogButton,
-  ChatButton,
-  GitHubButton,
-} from "#/components/button/mod.ts";
+import { LinkGroup } from "./navbar.tsx";
 
 export function PageFoot() {
   return (
@@ -14,11 +10,7 @@ export function PageFoot() {
       <DIV>
         © FartLabs out the <A href="https://wazoo.tech/">Wazoo</A>
       </DIV>
-      <DIV class="fart-inline">
-        <BlogButton />
-        <ChatButton />
-        <GitHubButton />
-      </DIV>
+      <LinkGroup class="fart-inline" />
     </FOOTER>
   );
 }
