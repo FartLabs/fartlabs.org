@@ -1,6 +1,8 @@
 /** @jsxImportSource react */
 /** @jsxTypesImportSource @types/react */
 
+// @ts-nocheck og_edge
+
 import { ImageResponse } from "og_edge";
 import type { Post } from "#/components/blog_page/posts.ts";
 
