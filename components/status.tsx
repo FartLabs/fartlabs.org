@@ -6,6 +6,7 @@ export function ServicesStatus() {
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      width: fit-content;
       background-color: rgba(0, 255, 0, 0.1);
       border: 1px solid rgba(0, 255, 0, 0.2);
       border-radius: 999px;
