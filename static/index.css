@@ -48,14 +48,14 @@
 }
 
 .middle-navbar {
-  display: none;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
 }
 
-@media (min-width: 512px) {
+@media (max-width: 512px) {
   .middle-navbar {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
+    display: none;
   }
 }
 

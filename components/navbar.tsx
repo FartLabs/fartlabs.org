@@ -20,7 +20,7 @@ export function Navbar() {
           </Link>
         </Header>
 
-        <LinkGroup class="middle-navbar fart-inline" />
+        <LinkGroup class="middle-navbar" />
 
         <DIV class="fart-inline">
           <A href="/#waitlist" class="fart-cta">
