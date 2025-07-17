@@ -25,6 +25,12 @@ coveted prizes. Kicking off on **March 23, 2025**, FartHacks is open to creators
 of all experience levels. Whether you are a first-time hacker or an experienced
 programmer, this is going to be epic.
 
+## Watch the intro video
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/bbeME9BaSKs?si=ELanNQVoIPNFZZHn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ## Why join FartHacks?
 
 - **Connect**: Team up with talented, forward-thinking hackers.
