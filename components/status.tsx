@@ -1,8 +1,10 @@
-import { DIV, SPAN } from "@fartlabs/htx";
+import { A, SPAN } from "@fartlabs/htx";
 
 export function ServicesStatus() {
   return (
-    <DIV style="
+    <A
+      href="https://fartlabs.openstatus.dev/"
+      style="
       display: flex;
       align-items: center;
       gap: 0.5rem;
@@ -14,7 +16,8 @@ export function ServicesStatus() {
       margin: 0.25rem 0;
       font-size: 0.875rem;
       line-height: 1.25rem;
-    ">
+    "
+    >
       <SPAN style="
         width: 8px;
         height: 8px;
@@ -23,6 +26,6 @@ export function ServicesStatus() {
         display: inline-block;
       " />
       <SPAN style="color: var(--fart-white)">All services online</SPAN>
-    </DIV>
+    </A>
   );
 }
