@@ -8,7 +8,7 @@ export function PageFoot() {
       class="fart-section"
       style="display: flex; justify-content: space-between; align-items: center; margin: 0 auto; padding: 1rem"
     >
-      <DIV style="display: flex; align-items: center; gap: 2rem">
+      <DIV style="display: flex; align-items: center">
         <DIV>
           © FartLabs out the <A href="https://wazoo.tech/">Wazoo</A>
           <BR />
