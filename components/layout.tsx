@@ -52,20 +52,8 @@ function Favicon() {
 
 const fartCss = "https://css.fart.tools/fart.css";
 
-const tubes = [
-  "/tube-green.css",
-  "/tube-purple.css",
-  "/tube-yellow.css",
-  "/tube-turquoise.css",
-  "/tube-magenta.css",
-  "/tube-orange.css",
-  "/tube-blue.css",
-  "/tube-empty.css",
-];
-
 const stylesheets = [
   "/index.css",
-  ...tubes,
   "/cubes.css",
   fartCss,
   "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark-dimmed.min.css",

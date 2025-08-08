@@ -134,10 +134,6 @@ footer {
     0 10px 10px -5px rgba(74, 140, 86, 0.1);
 }
 
-#waitlist {
-  scroll-margin-top: 4rem;
-}
-
 .waitlist-form-container {
   display: flex;
   flex-direction: column;

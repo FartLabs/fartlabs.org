@@ -1,5 +1,4 @@
 import { copy, exists, expandGlob } from "@std/fs";
-import { generateTubes } from "./tubes.ts";
 import { generateHTML } from "./html.tsx";
 import { generateFeed } from "./feed.ts";
 
@@ -10,7 +9,6 @@ if (import.meta.main) {
 async function generateFiles(directory: string) {
   await removeGeneratedFiles(directory);
   await copyFiles(directory);
-  await generateTubes(directory);
   await generateHTML(directory);
   await generateFeed(directory);
 }
