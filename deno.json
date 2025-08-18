@@ -9,6 +9,7 @@
     "@fartlabs/css": "jsr:@fartlabs/css@^0.0.9",
     "@fartlabs/htx": "jsr:@fartlabs/htx@^0.0.10",
     "@libsql/client": "npm:@libsql/client@^0.15.12",
+    "@libsql/linux-x64-gnu": "npm:@libsql/linux-x64-gnu@^0.5.17",
     "@std/front-matter": "jsr:@std/front-matter@^1.0.9",
     "@std/fs": "jsr:@std/fs@^1.0.19",
     "@std/http": "jsr:@std/http@^1.0.20",
