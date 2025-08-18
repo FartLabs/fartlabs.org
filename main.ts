@@ -1,4 +1,4 @@
-import { createClient } from "@libsql/client";
+import { createClient } from "@libsql/client/node";
 import { serveDir } from "@std/http/file-server";
 import { route } from "@std/http/unstable-route";
 
