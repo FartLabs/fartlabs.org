@@ -1,6 +1,6 @@
-import { createClient } from "@libsql/client/node";
 import { serveDir } from "@std/http/file-server";
 import { route } from "@std/http/unstable-route";
+import { addToWaitlist, checkEmailExists } from "./database/kv.ts";
 
 export default {
   fetch: route(
@@ -26,37 +26,13 @@ export default {
               throw new Error("Failed reCAPTCHA verification");
             }
 
-            const url = Deno.env.get("TURSO_DATABASE_URL");
-            if (!url) {
-              throw new Error("TURSO_DATABASE_URL is not set");
+            const kv = await Deno.openKv(Deno.env.get("DENO_KV_PATH")!);
+            const emailExists = await checkEmailExists(kv, body.email);
+            if (emailExists) {
+              throw new Error("Email already registered");
             }
 
-            const authToken = Deno.env.get("TURSO_AUTH_TOKEN");
-            if (!authToken) {
-              throw new Error("TURSO_AUTH_TOKEN is not set");
-            }
-
-            const client = createClient({ url, authToken });
-            await client
-              .batch([
-                "CREATE TABLE IF NOT EXISTS waitlist (email TEXT PRIMARY KEY, created_at DATETIME DEFAULT CURRENT_TIMESTAMP)",
-                {
-                  sql: "SELECT email FROM waitlist WHERE email = ?",
-                  args: [body.email],
-                },
-              ], "read")
-              .then((result) => {
-                if (result[1].rows.length > 0) {
-                  throw new Error("Email already registered");
-                }
-              });
-
-            await client.batch([
-              {
-                sql: "INSERT INTO waitlist (email) VALUES (?)",
-                args: [body.email],
-              },
-            ], "write");
+            await addToWaitlist(kv, body.email);
 
             return new Response(null, { status: 200 });
           } catch (error) {
