@@ -1,6 +1,6 @@
 export interface WaitlistEntry {
   email: string;
-  created_at: string;
+  created_at?: string;
 }
 
 export async function checkEmailExists(
@@ -22,11 +22,15 @@ export async function addToWaitlist(kv: Deno.Kv, email: string): Promise<void> {
 
 export async function seedWaitlist(
   kv: Deno.Kv,
-  entries: WaitlistEntry[],
+  emails: string[],
 ): Promise<void> {
   const batchOp = kv.atomic();
-  for (const entry of entries) {
-    batchOp.set(["waitlist", entry.email], entry);
+  for (const email of emails) {
+    const entry: WaitlistEntry = {
+      email,
+      created_at: new Date().toISOString(),
+    };
+    batchOp.set(["waitlist", email], entry);
   }
 
   await batchOp.commit();

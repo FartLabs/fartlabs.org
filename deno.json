@@ -8,7 +8,6 @@
     "#/": "./",
     "@fartlabs/css": "jsr:@fartlabs/css@^0.0.9",
     "@fartlabs/htx": "jsr:@fartlabs/htx@^0.0.10",
-
     "@std/cli": "jsr:@std/cli@^1.0.21",
     "@std/front-matter": "jsr:@std/front-matter@^1.0.9",
     "@std/fs": "jsr:@std/fs@^1.0.19",

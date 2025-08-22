@@ -42,13 +42,21 @@ const script = `async function submitWaitlistForm(event) {
     body: JSON.stringify({ email, token }),
   });
   if (!response.ok) {
-    // TODO: Handle error email already registered.
-    // https://github.com/FartLabs/cpu.fartlabs.org/blob/6d1fbcc48efa186db592afb8b207b0ebc06132b4/components/sign-up-form.tsx#L58
     const { error } = await response.json();
+    
     if (error === "Email already registered") {
       formContainer.innerHTML = \`${(
   <WaitlistForm
     message={<WaitlistFormMessage state="already-registered" />}
+  />
+)}\`;
+      return;
+    }
+    
+    if (error === "reCAPTCHA score too low - possible bot activity") {
+      formContainer.innerHTML = \`${(
+  <WaitlistForm
+    message={<WaitlistFormMessage state="recaptcha-error" />}
   />
 )}\`;
       return;
@@ -130,7 +138,9 @@ function WaitlistFormButton(props: { state?: "loading" }) {
 }
 
 function WaitlistFormMessage(
-  props: { state: "already-registered" | "error" | "success" },
+  props: {
+    state: "already-registered" | "error" | "success" | "recaptcha-error";
+  },
 ) {
   switch (props?.state) {
     case "already-registered": {
@@ -148,6 +158,17 @@ function WaitlistFormMessage(
       return (
         <DIV class="waitlist-error" slot="message">
           <P style="color: red">An error occurred. Please try again later.</P>
+        </DIV>
+      );
+    }
+
+    case "recaptcha-error": {
+      return (
+        <DIV class="waitlist-error" slot="message">
+          <P style="color: red">
+            reCAPTCHA verification failed. Please refresh the page and try
+            again.
+          </P>
         </DIV>
       );
     }

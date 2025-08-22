@@ -2,7 +2,7 @@
 
 import { parseArgs } from "@std/cli/parse-args";
 import { Spinner } from "@std/cli/unstable-spinner";
-import { seedWaitlist, WaitlistEntry } from "./kv.ts";
+import { seedWaitlist } from "./kv.ts";
 
 interface SeedOptions {
   clear?: boolean;
@@ -70,7 +70,7 @@ async function seedDatabase(kv: Deno.Kv, filePath: string) {
   spinner.start();
 
   const fileContent = await Deno.readTextFile(filePath);
-  const seedData: WaitlistEntry[] = JSON.parse(fileContent);
+  const seedData: string[] = JSON.parse(fileContent);
 
   spinner.stop();
   console.log(`📖 Loaded ${seedData.length} entries from ${filePath}\n`);
