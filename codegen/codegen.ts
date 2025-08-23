@@ -1,4 +1,4 @@
-import { copy, exists, expandGlob } from "@std/fs";
+import { copy, exists } from "@std/fs";
 import { generateHTML } from "./html.tsx";
 import { generateFeed } from "./feed.ts";
 
@@ -23,10 +23,24 @@ async function removeGeneratedFiles(directory: string) {
 
 async function copyFiles(directory: string) {
   await Deno.mkdir(directory, { recursive: true });
+
   await copy("deno.json", `${directory}/deno.json`, { overwrite: true });
   await copy("static", directory, { overwrite: true });
 
-  for await (const file of expandGlob("*.ts")) {
-    await copy(file.path, `${directory}/${file.name}`, { overwrite: true });
+  const sourceFiles = ["main.ts", "database/kv.ts"];
+  for await (const sourceFile of sourceFiles) {
+    try {
+      // Create the destination directory structure if it doesn't exist.
+      const destPath = `${directory}/${sourceFile}`;
+      const destDir = destPath.substring(0, destPath.lastIndexOf("/"));
+      if (destDir !== directory) {
+        await Deno.mkdir(destDir, { recursive: true });
+      }
+
+      await Deno.copyFile(sourceFile, destPath);
+    } catch (error) {
+      console.error(`Failed to copy ${sourceFile}:`, error);
+      throw error;
+    }
   }
 }

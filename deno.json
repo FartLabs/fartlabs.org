@@ -8,13 +8,12 @@
     "#/": "./",
     "@fartlabs/css": "jsr:@fartlabs/css@^0.0.9",
     "@fartlabs/htx": "jsr:@fartlabs/htx@^0.0.10",
-    "@libsql/client": "npm:@libsql/client@^0.15.12",
-    "@libsql/linux-x64-gnu": "npm:@libsql/linux-x64-gnu@^0.5.17",
+    "@std/cli": "jsr:@std/cli@^1.0.21",
     "@std/front-matter": "jsr:@std/front-matter@^1.0.9",
     "@std/fs": "jsr:@std/fs@^1.0.19",
     "@std/http": "jsr:@std/http@^1.0.20",
     "@std/path": "jsr:@std/path@^1.1.2",
-    "@types/react": "npm:@types/react@^19.1.10",
+    "@types/react": "npm:@types/react@^19.1.11",
     "feed": "npm:feed@^5.1.0",
     "highlight.js": "npm:highlight.js@^11.11.1",
     "markdown-it": "npm:markdown-it@^14.1.0",
@@ -27,10 +26,14 @@
     "generate": "deno run -A codegen/codegen.ts",
     "start": {
       "description": "Start the server",
-      "command": "deno serve --allow-net --allow-read --allow-ffi --allow-env --env main.ts generated",
+      "command": "deno serve --allow-net --allow-read --allow-ffi --allow-env --unstable-kv --env main.ts generated",
       "dependencies": ["generate"]
     },
-    "outdated": "deno outdated --update --latest"
+    "outdated": "deno outdated --update --latest",
+    "seed": {
+      "description": "Seed the database",
+      "command": "deno run --env --allow-read --allow-env --unstable-kv --allow-net database/cli.ts"
+    }
   },
   "fmt": {
     "exclude": ["generated"]

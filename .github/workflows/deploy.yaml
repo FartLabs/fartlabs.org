@@ -32,3 +32,4 @@ jobs:
           project: "fartlabs-dot-org"
           entrypoint: "main.ts"
           root: "generated"
+          flags: "--unstable-kv"
