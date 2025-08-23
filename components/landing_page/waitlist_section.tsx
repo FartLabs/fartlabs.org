@@ -10,6 +10,7 @@ import {
   SPAN,
 } from "@fartlabs/htx";
 import { Link, Section } from "@fartlabs/css";
+import { recaptchaSiteKey } from "#/components/recaptcha_script.tsx";
 import { BorderTube } from "#/components/border-tube.tsx";
 
 const script = `async function submitWaitlistForm(event) {
@@ -28,7 +29,7 @@ const script = `async function submitWaitlistForm(event) {
     grecaptcha.ready(() => {
       grecaptcha.execute(
         // https://github.com/FartLabs/cpu.fartlabs.org/blob/6d1fbcc48efa186db592afb8b207b0ebc06132b4/lib/recaptcha.ts
-        "6LfJUC8rAAAAALwhkiZR_6YxdJGF9Q42jOkAXfa1",
+        "${recaptchaSiteKey}",
         { action: "submit" },
       ).then(resolve, reject);
     });

@@ -1,6 +1,7 @@
 import { SCRIPT } from "@fartlabs/htx/script";
 import { featuredPosts } from "#/components/blog_page/data.ts";
 import { Layout } from "#/components/layout.tsx";
+import { RecaptchaScript } from "#/components/recaptcha_script.tsx";
 import { FAQsSection } from "./faqs_section.tsx";
 import { FeaturedBlogPostsSection } from "./featured_blog_posts_section.tsx";
 import { FeaturedGamesSection } from "./featured_games_section.tsx";
@@ -28,7 +29,7 @@ export function LandingPage() {
 const scripts = [
   <SCRIPT src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js" />,
   <SCRIPT src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" />,
-  <SCRIPT src="https://www.google.com/recaptcha/api.js?render=6LfJUC8rAAAAALwhkiZR_6YxdJGF9Q42jOkAXfa1" />,
+  <RecaptchaScript />,
   <ClaimFocusScript />,
 ];
 
