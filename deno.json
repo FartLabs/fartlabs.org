@@ -13,7 +13,7 @@
     "@std/fs": "jsr:@std/fs@^1.0.19",
     "@std/http": "jsr:@std/http@^1.0.20",
     "@std/path": "jsr:@std/path@^1.1.2",
-    "@types/react": "npm:@types/react@^19.1.10",
+    "@types/react": "npm:@types/react@^19.1.11",
     "feed": "npm:feed@^5.1.0",
     "highlight.js": "npm:highlight.js@^11.11.1",
     "markdown-it": "npm:markdown-it@^14.1.0",
@@ -31,8 +31,8 @@
     },
     "outdated": "deno outdated --update --latest",
     "seed": {
-      "description": "Seed the database with sample data",
-      "command": "deno run --allow-read --allow-env --unstable-kv database/seed.ts"
+      "description": "Seed the database",
+      "command": "deno run --env --allow-read --allow-env --unstable-kv --allow-net database/cli.ts"
     }
   },
   "fmt": {

@@ -12,12 +12,13 @@ export async function checkEmailExists(
 }
 
 export async function addToWaitlist(kv: Deno.Kv, email: string): Promise<void> {
-  const entry: WaitlistEntry = {
-    email,
-    created_at: new Date().toISOString(),
-  };
-
-  await kv.set(["waitlist", email], entry);
+  await kv.set(
+    ["waitlist", email],
+    {
+      email,
+      created_at: new Date().toISOString(),
+    } satisfies WaitlistEntry,
+  );
 }
 
 export async function seedWaitlist(
