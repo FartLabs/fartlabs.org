@@ -35,7 +35,7 @@ export function Navbar() {
 export function LinkGroup(props: { class: string }) {
   return (
     <DIV class={props.class}>
-      <BlogButton />&nbsp;<ChatButton />&nbsp;<GitHubButton />
+      <BlogButton />&nbsp;<ChatButton />&nbsp;<GitHubButton />&nbsp;
     </DIV>
   );
 }
