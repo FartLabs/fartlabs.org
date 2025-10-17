@@ -14,13 +14,6 @@ Hey there! We're a bunch of scientists, engineers, and operators who get excited
 about building developer tools, games, and innovative projects that actually put
 users in the driver's seat of their digital experience.
 
-## Featured roles
-
-We're always on the hunt for talented engineers, scientists, designers,
-operators, and all-around awesome people to join our growing team. Whether
-you're into developer tools, game development, or building the future of
-user-centric software, we want to hear from you!
-
 ## Core values
 
 | Value           | Description                                          |
@@ -33,14 +26,42 @@ user-centric software, we want to hear from you!
 
 ## Guiding principles
 
-- Engage in a democracy of ideas
-- Set high standards
-- Assume nothing is somebody else's problem
-- Think big and keep things simple
-- Perpetually improve
-- Have fun and look out for each other
-- Measure success by our impact on others
-- Get stuff done
+Democracy of ideas, high standards, ownership, simplicity, continuous
+improvement, mutual support, impact, and getting things done.
+
+## Our philosophy
+
+- Own your data: favor plain files and SQLite so your work stays yours.
+- Local-first by default: your notes and ideas stay on your machine unless you
+  choose otherwise.
+- Open source by default: transparent, auditable, and forkable.
+- Use any model: bring your own keys and choose the tools that work for you.
+- Interoperable by design: plain text and standard tooling to avoid lock-in.
+- Performance and pragmatism: modern stack and fast paths that respect your
+  time.
+
+## Organic software
+
+Like farming, you can factory‑scale or grow the good stuff. We choose the
+latter.
+
+- Not on the VC ferris wheel: built to last, not to flip.
+- Clear pricing page.
+- Transparent about funding sources and revenue.
+
+## OSS contributions
+
+We are looking for open-source contributors on a per-project basis across
+FartLabs repos and adjacent ecosystems. We scope contributions collaboratively
+based on impact, priority, and fit.
+
+Interested? Fill out the short application and we’ll schedule a quick intro
+call:
+[Apply for OSS Sponsorship ↗](https://docs.google.com/forms/d/e/1FAIpQLSdS6iN0l2Ze6_RX_MU70qGCnyYiMif6v4KO-Cd1q6tU-11RIA/viewform?usp=dialog)
+
+How to get started: You can also join our Discord to chat with maintainers or
+find
+[open issues on GitHub](https://github.com/search?q=org%3AFartLabs+is%3Aissue+is%3Aopen&type=issues).
 
 <div class="border-tube-green glow" style="display: inline-flex; justify-content: center; align-items: center; padding: 0.5rem; margin: 2rem auto;">
   <a href="https://www.theexitgame.com/" style="display: flex; justify-content: center; align-items: center;">
@@ -56,28 +77,13 @@ user-centric software, we want to hear from you!
 
 We're all about taking care of our FartLabs team members, both now and in the
 future. Our comprehensive benefits are designed to support your physical,
-financial, and emotional well-being.
+financial, and emotional well-being. Everyone has a place at FartLabs.
 
-### For employees
+### Benefits summary
 
-- Competitive salary and equity
-- Health, dental and vision insurance
-- Monthly health and wellness stipend
-- Late-night dinners and transport benefits
-
-### Culture and career development
-
-- Quarterly onsites at our office
-- Team-driven celebrations and events
-- Unlimited snacks and weekly lunches
-- Whatever gear you need (laptop, headphones, H100s, etc.)
-
-### Life and family
-
-- Flexible working hours
-- Paid parental leave
-- 401(k)
-- Opportunity to work remote or at our office
+- Like-minded team and challenging, rewarding work
+- Flexible hours, remote and on-site options
+- Team events and networking opportunities
 
 ---
 
