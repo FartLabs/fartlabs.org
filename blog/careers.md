@@ -42,6 +42,16 @@ user-centric software, we want to hear from you!
 - Measure success by our impact on others
 - Get stuff done
 
+<div class="border-tube-green glow" style="display: inline-flex; justify-content: center; align-items: center; padding: 0.5rem; margin: 2rem auto;">
+  <a href="https://www.theexitgame.com/" style="display: flex; justify-content: center; align-items: center;">
+    <img src="/exit-game.jpg" alt="FartLabs team escape room outing" title="FartLabs escape room outing" style="object-fit: cover; margin: 0.75rem;">
+  </a>
+</div>
+
+<p style="text-align: center; font-style: italic;">
+  Our fun team outing at an escape room — we put our collaborative problem-solving skills to the ultimate test and successfully escaped!
+</p>
+
 ## Our benefits
 
 We're all about taking care of our FartLabs team members, both now and in the
