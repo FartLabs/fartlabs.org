@@ -21,6 +21,8 @@ Run `deno lint` to lint the code.
 
 Run `deno check main.ts` to check the code.
 
+Or, run `deno task precommit` to run all the checks before committing.
+
 ---
 
 Developed with 🧪 [**@FartLabs**](https://github.com/FartLabs)

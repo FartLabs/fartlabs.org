@@ -33,6 +33,13 @@
     "seed": {
       "description": "Seed the database",
       "command": "deno run --env --allow-read --allow-env --unstable-kv --allow-net database/cli.ts"
+    },
+    "fmt": "deno fmt",
+    "lint": "deno lint",
+    "check": "deno check",
+    "precommit": {
+      "description": "Run lint, fmt, and check before committing",
+      "dependencies": ["check", "lint", "fmt", "generate"]
     }
   },
   "fmt": {
