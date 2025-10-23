@@ -83,24 +83,23 @@ yours, cohesive, and in harmony with the greater world around you.
 
 Our lab's mission is inspired by my late uncle, Gregory Davidson. Uncle Gregory
 was a dedicated programmer and a creative, playful spirit, highlighted by his
-wonderfully funny projects—including his film series, "Fart Movie" and "Fart
-Movie 2."
+creative projects, especially his film series, "Fart Movie" and "Fart Movie 2."
 
 Gregory was also Deaf, having been born without hearing. Farts, as it turns out,
-transcend boundaries. The vibrations are universally funny, creating a shared,
-physical experience of humor that everyone can feel, even Deaf individuals, like
-my uncle.
+transcend boundarie of communication. The vibrations are universally funny,
+creating a shared, physical experience of humor that everyone can feel, even
+Deaf individuals, like my uncle.
 
-Our close friendship gave me a profound perspective on how hearing-impaired
-individuals experience the world. It taught me that when you love someone, you
-create your own unique language to connect. This instilled in me a lifelong
-appreciation for the diverse ways we all communicate with each other and
+Our close friendship informed my perspective on how hearing-impaired individuals
+experience the world. It taught me that when you love someone, you create your
+own unique language to connect. This instilled in me a lifelong interest in
+understanding the diverse ways we all communicate with each other and
 technology.
 
 Our lab is a tribute to Gregory's playful, brave, powerful, and righteous
 spirit. We are building a platform that celebrates our differences, empowering
-everyone to cultivate deeper connections and realize their unique potential with
-the help of technology that truly understands them. 🤟
+everyone to cultivate deeper connections and realize their unique potential
+through technology that truly understands them. 🤟
 
 <!-- TODO: Use photo of Gregory with Ethan and Brandon. -->
 
