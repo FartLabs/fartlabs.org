@@ -29,6 +29,22 @@ For business inquiries, partnerships, donations, or other contributions, contact
 the founder directly: [Contact Ethan at etok.me →](https://etok.me) or
 ethan[at]wazoo.tech
 
+## Social media
+
+Connect with us across all our platforms:
+
+- **GitHub**: [github.com/FartLabs](https://github.com/FartLabs)
+- **Discord**: [go.fart.tools/chat](https://go.fart.tools/chat)
+- **Twitter/X**: [x.com/fartlabs_org](https://x.com/fartlabs_org)
+- **Bluesky**:
+  [bsky.app/profile/fartlabs.org](https://bsky.app/profile/fartlabs.org)
+- **Instagram**: [instagram.com/fartlabs](https://instagram.com/fartlabs)
+- **LinkedIn**:
+  [linkedin.com/company/fartlabs](https://linkedin.com/company/fartlabs)
+- **YouTube**: [youtube.com/@fartlabs_org](https://youtube.com/@fartlabs_org)
+- **Reddit**: [reddit.com/r/FartLabs](https://reddit.com/r/FartLabs)
+- **Linktree**: [linktr.ee/fartlabs](https://linktr.ee/fartlabs)
+
 ## General inquiries
 
 For general questions about FartLabs, our projects, or community:
