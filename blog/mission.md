@@ -55,6 +55,17 @@ the opportunity to shape a future where technology truly serves our needs. By
 challenging the biased, self-serving agendas and walled gardens that dominate
 the tech industry, we can take control of our digital experiences.
 
+<div class="border-tube-purple glow" style="display: inline-flex; justify-content: center; align-items: center; padding: 0.5rem;">
+  <a href="https://www.michaelwhelan.com/galleries/edgedancer/" style="display: flex; justify-content: center; align-items: center;">
+    <img
+      src="/edgedancer.jpg"
+      style="object-fit: cover; margin: 0.75rem; max-height: 400px;"
+      title="EDGEDANCER by Michael Whelan"
+      alt="A woman in a white linen shawl dances carefree along a high grassy ridge that bends and twists into the hazy distance. She glances not at the narrow footing ahead but off to the side. Her arms are out for balance while her eyes are pressed shut as if she's lost in thought. Far ahead along the upper edge of the painting breaks are visible along the ridge. Vertical segments stand like the legs of a broken bridge with gray sky showing through as the wall-like rim meanders to the edge of the painting and back. Shorter impassable segments come more frequently as the trail winds back into nothingness. The woman sees none of it as she daintily high steps in the foreground. Low clusters of wildflowers sit lilac on the verdant green grass as the occasional butterfly hovers nearby."
+    >
+  </a>
+</div>
+
 ## Our vision
 
 We envision a future where digital tools seamlessly integrate, adapting to
