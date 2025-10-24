@@ -1,19 +1,25 @@
 import { A, BR, DIV, FOOTER, STRONG } from "@fartlabs/htx";
 import { LinkGroup } from "./navbar.tsx";
+import { CareersButton } from "./button/careers_button.tsx";
 import { ServicesStatus } from "./status.tsx";
 
 export function PageFoot() {
   return (
     <FOOTER
       class="fart-section"
-      style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; padding: 1rem; width: 100%; gap: 1rem;"
+      style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 auto; padding: 1rem; gap: 1rem;"
     >
-      <DIV style="display: flex; justify-content: center;">
-        <LinkGroup class="fart-inline" />
+      <DIV>
+        <DIV style="text-align: center;">
+          <LinkGroup class="fart-inline" />
+          <BR />
+          <CareersButton />
+        </DIV>
       </DIV>
 
       <DIV style="text-align: center;">
         © FartLabs out the <A href="https://wazoo.tech/">Wazoo</A>
+        <BR />
         <BR />
         <ServicesStatus />
       </DIV>

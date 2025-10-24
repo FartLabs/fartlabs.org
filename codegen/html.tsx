@@ -1,5 +1,4 @@
 import { LandingPage } from "#/components/landing_page/mod.ts";
-// import { CareersPage } from "#/components/careers_page/mod.ts";
 import { aliases, posts, topics } from "#/components/blog_page/data.ts";
 import { toTopicID } from "#/components/blog_page/posts.ts";
 import { BlogPage } from "#/components/blog_page/blog_page.tsx";
@@ -12,10 +11,6 @@ import { renderPostImageResponse } from "#/codegen/og.tsx";
  */
 export async function generateHTML(directory: string) {
   await Deno.writeTextFile(`${directory}/index.html`, <LandingPage />);
-
-  // TODO: Add careers page
-  // await Deno.mkdir(`${directory}/careers`, { recursive: true });
-  // await Deno.writeTextFile(`${directory}/careers/index.html`, <CareersPage />);
 
   await Deno.mkdir(`${directory}/blog`, { recursive: true });
   await Deno.writeTextFile(`${directory}/blog/index.html`, <BlogPage />);
