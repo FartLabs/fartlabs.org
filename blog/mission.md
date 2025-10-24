@@ -83,10 +83,11 @@ yours, cohesive, and in harmony with the greater world around you.
 
 Our lab's mission is inspired by my late uncle, Gregory Davidson. Uncle Gregory
 was a dedicated programmer and a creative, playful spirit, highlighted by his
-creative projects, especially his film series, "Fart Movie" and "Fart Movie 2."
+innovative projects, especially his film series, "Fart Movie" and "Fart Movie
+2."
 
 Gregory was also Deaf, having been born without hearing. Farts, as it turns out,
-transcend boundarie of communication. The vibrations are universally funny,
+transcend boundaries of communication. The vibrations are universally funny,
 creating a shared, physical experience of humor that everyone can feel, even
 Deaf individuals, like my uncle.
 
@@ -98,8 +99,7 @@ technology.
 
 Our lab is a tribute to Gregory's playful, brave, powerful, and righteous
 spirit. We are building a platform that celebrates our differences, empowering
-everyone to cultivate deeper connections and realize their unique potential
-through technology that truly understands them. 🤟
+everyone to cultivate deeper connections and realize their unique potential. 🤟
 
 <!-- TODO: Use photo of Gregory with Ethan and Brandon. -->
 
@@ -117,9 +117,9 @@ through technology that truly understands them. 🤟
 ## Take control
 
 We are building a future where users take control of their digital experience.
-[Learn more](/blog) about how contributing to our project helps us advocating
-for open, user-centric autodidactic research and development tools, you can be a
-part of this movement. Join us!
+[Learn more](/blog) about how contributing to our project helps us to advicate
+for open, user-centric autodidactic research and development tools.
+
 <a class="fart-button" href="https://github.com/FartLabs" target="_blank">GitHub<small>↗</small></a>
 <a class="fart-button" href="https://go.fart.tools/chat" target="_blank">Chat<small>↗</small></a>
 <a class="fart-button" href="https://shop.fartlabs.org/" target="_blank">Shop<small>↗</small></a>
