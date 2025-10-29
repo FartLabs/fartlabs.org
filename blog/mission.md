@@ -49,7 +49,7 @@ computing.
 Inspired by decades of sci-fi and technological groundwork, we have the
 opportunity to shape a future where technology truly serves our needs. By
 challenging the biased, self-serving agendas and walled gardens that dominate
-the tech industry, we can take control of our digital experiences.
+the tech industry, we can build technology that truly serves people.
 
 <div class="border-tube-purple glow" style="display: inline-flex; justify-content: center; align-items: center; padding: 0.5rem;">
   <a href="https://www.michaelwhelan.com/galleries/edgedancer/" style="display: flex; justify-content: center; align-items: center;">
@@ -64,16 +64,12 @@ the tech industry, we can take control of our digital experiences.
 
 ## Our vision
 
-We envision a future where your digital tools don't just exist, they work
-together, adapting seamlessly to your unique needs. We're building that future
-using the principles of the Semantic Web, creating software that empowers you to
-connect different applications and build a truly personalized digital
-environment.
+We envision a future where your digital tools work together on your terms.
 
 Imagine effortlessly linking your work calendar with your family's messaging
 app, or building a custom dashboard that pulls real-time information from all
-the sources that matter to you. The profound impact of this lies in the
-"semantic" design of technology that understands the meaning behind your data.
+the sources that matter to you. The power comes from technology that understands
+the meaning behind your data.
 
 Our goal is to merge modern neuro-symbolic AI and web technologies into a
 platform where you are the operator, living a digital experience that is truly
@@ -117,7 +113,7 @@ everyone to cultivate deeper connections and realize their unique potential. ðŸ¤
 ## Take control
 
 We are building a future where users take control of their digital experience.
-[Learn more](/blog) about how contributing to our project helps us to advicate
+[Learn more](/blog) about how contributing to our project helps us to advocate
 for open, user-centric autodidactic research and development tools.
 
 <a class="fart-button" href="https://github.com/FartLabs" target="_blank">GitHub<small>â†—</small></a>
