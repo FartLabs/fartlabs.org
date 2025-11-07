@@ -80,7 +80,7 @@ yours, cohesive, and in harmony with the greater world around you.
 Our lab's mission is inspired by my late uncle, Gregory Davidson. Uncle Gregory
 was a dedicated programmer and a creative, playful spirit, highlighted by his
 innovative projects, especially his film series, "Fart Movie" and "Fart Movie
-2."
+2." He also introduced me to the world of computers and software programming.
 
 Gregory was also Deaf, having been born without hearing. Farts, as it turns out,
 transcend boundaries of communication. The vibrations are universally funny,
