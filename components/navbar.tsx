@@ -2,6 +2,7 @@ import { A, DIV, NAV } from "@fartlabs/htx";
 import { Header, Link } from "@fartlabs/css";
 import {
   BlogButton,
+  CareersButton,
   ChatButton,
   GitHubButton,
 } from "#/components/button/mod.ts";
@@ -35,7 +36,7 @@ export function Navbar() {
 export function LinkGroup(props: { class: string }) {
   return (
     <DIV class={props.class}>
-      <BlogButton />&nbsp;<ChatButton />&nbsp;<GitHubButton />&nbsp;
+      <BlogButton />&nbsp;<ChatButton />&nbsp;<GitHubButton />&nbsp;<CareersButton />
     </DIV>
   );
 }
