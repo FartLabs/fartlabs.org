@@ -2,7 +2,6 @@ import { A, DIV, NAV } from "@fartlabs/htx";
 import { Header, Link } from "@fartlabs/css";
 import {
   BlogButton,
-  CareersButton,
   ChatButton,
   GitHubButton,
 } from "#/components/button/mod.ts";
@@ -21,7 +20,9 @@ export function Navbar() {
           </Link>
         </Header>
 
-        <LinkGroup class="middle-navbar" />
+        <DIV class="middle-navbar">
+          <BlogButton />&nbsp;<ChatButton />&nbsp;<GitHubButton />
+        </DIV>
 
         <DIV class="fart-inline">
           <A href="/#waitlist" class="fart-cta">
@@ -30,13 +31,5 @@ export function Navbar() {
         </DIV>
       </DIV>
     </NAV>
-  );
-}
-
-export function LinkGroup(props: { class: string }) {
-  return (
-    <DIV class={props.class}>
-      <BlogButton />&nbsp;<ChatButton />&nbsp;<GitHubButton />&nbsp;<CareersButton />
-    </DIV>
   );
 }

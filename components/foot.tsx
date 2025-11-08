@@ -1,6 +1,11 @@
 import { A, BR, DIV, FOOTER, STRONG } from "@fartlabs/htx";
-import { LinkGroup } from "./navbar.tsx";
 import { ServicesStatus } from "./status.tsx";
+import {
+  BlogButton,
+  CareersButton,
+  ChatButton,
+  GitHubButton,
+} from "./button/mod.ts";
 
 export function PageFoot() {
   return (
@@ -10,7 +15,9 @@ export function PageFoot() {
     >
       <DIV>
         <DIV style="text-align: center;">
-          <LinkGroup class="fart-inline" />
+          <DIV>
+            <BlogButton />&nbsp;<ChatButton />&nbsp;<GitHubButton />&nbsp;<CareersButton />
+          </DIV>
         </DIV>
       </DIV>
 
