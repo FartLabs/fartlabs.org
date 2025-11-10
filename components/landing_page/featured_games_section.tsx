@@ -41,7 +41,7 @@ export interface ProjectSectionProps {
 function GameSection(props: ProjectSectionProps) {
   const borderColor = getBorderColor(props.color);
   const backgroundColor = getBackgroundColor(props.color);
-  
+
   return (
     <DIV
       class="project"
@@ -55,26 +55,42 @@ function GameSection(props: ProjectSectionProps) {
 
 function getBorderColor(color: TubeColor): string {
   switch (color) {
-    case "blue": return "rgba(59, 130, 246, 0.3)";
-    case "turquoise": return "rgba(20, 184, 166, 0.3)";
-    case "purple": return "rgba(168, 85, 247, 0.3)";
-    case "yellow": return "rgba(234, 179, 8, 0.3)";
-    case "magenta": return "rgba(236, 72, 153, 0.3)";
-    case "green": return "rgba(34, 197, 94, 0.3)";
-    case "orange": return "rgba(249, 115, 22, 0.3)";
-    default: return "rgba(255, 255, 255, 0.3)";
+    case "blue":
+      return "rgba(59, 130, 246, 0.3)";
+    case "turquoise":
+      return "rgba(20, 184, 166, 0.3)";
+    case "purple":
+      return "rgba(168, 85, 247, 0.3)";
+    case "yellow":
+      return "rgba(234, 179, 8, 0.3)";
+    case "magenta":
+      return "rgba(236, 72, 153, 0.3)";
+    case "green":
+      return "rgba(34, 197, 94, 0.3)";
+    case "orange":
+      return "rgba(249, 115, 22, 0.3)";
+    default:
+      return "rgba(255, 255, 255, 0.3)";
   }
 }
 
 function getBackgroundColor(color: TubeColor): string {
   switch (color) {
-    case "blue": return "rgba(59, 130, 246, 0.05)";
-    case "turquoise": return "rgba(20, 184, 166, 0.05)";
-    case "purple": return "rgba(168, 85, 247, 0.05)";
-    case "yellow": return "rgba(234, 179, 8, 0.05)";
-    case "magenta": return "rgba(236, 72, 153, 0.05)";
-    case "green": return "rgba(34, 197, 94, 0.05)";
-    case "orange": return "rgba(249, 115, 22, 0.05)";
-    default: return "rgba(255, 255, 255, 0.05)";
+    case "blue":
+      return "rgba(59, 130, 246, 0.05)";
+    case "turquoise":
+      return "rgba(20, 184, 166, 0.05)";
+    case "purple":
+      return "rgba(168, 85, 247, 0.05)";
+    case "yellow":
+      return "rgba(234, 179, 8, 0.05)";
+    case "magenta":
+      return "rgba(236, 72, 153, 0.05)";
+    case "green":
+      return "rgba(34, 197, 94, 0.05)";
+    case "orange":
+      return "rgba(249, 115, 22, 0.05)";
+    default:
+      return "rgba(255, 255, 255, 0.05)";
   }
 }

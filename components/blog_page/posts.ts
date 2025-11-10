@@ -26,7 +26,9 @@ export function readPosts(): Promise<Post[]> {
       return Promise.all(files.map((file) => readPost(file)));
     })
     .then((posts) => {
-      return posts.toSorted(byDateDescending);
+      return posts
+        .filter((post) => !post.attrs.draft)
+        .toSorted(byDateDescending);
     });
 }
 
@@ -117,6 +119,7 @@ export interface Post {
  */
 export interface PostAttrs {
   pinned?: boolean;
+  draft?: boolean;
   title: string;
   description: string;
   authors: PostAuthor[];

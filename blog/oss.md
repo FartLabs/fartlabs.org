@@ -6,6 +6,7 @@ authors:
     username: "EthanThatOneKid"
 topics: ["Community", "Careers", "Open Source"]
 date: 2025-10-23
+draft: true
 ---
 
 ## OSS Sponsorship Program

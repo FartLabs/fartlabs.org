@@ -53,10 +53,4 @@ Deno Blocks (Deno Subhosting Hackathon winner), Fart.css, and more.
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdS6iN0l2Ze6_RX_MU70qGCnyYiMif6v4KO-Cd1q6tU-11RIA/viewform?usp=dialog" class="fart-button">Apply
 now<small>&#8599;</small></a>
 
-Learn more about FartLabs at our <a href="/blog" class="fart-button">Blog</a>.
-
----
-
-_For detailed information about our team, values, benefits, and company culture,
-check out our [careers page](/careers). For specific OSS sponsorship details,
-see our [OSS sponsorship page](/oss)._
+Learn more about FartLabs on our <a href="/blog" class="fart-button">Blog</a>.
