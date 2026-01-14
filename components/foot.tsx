@@ -2,9 +2,14 @@ import { A, BR, DIV, FOOTER, STRONG } from "@fartlabs/htx";
 import { ServicesStatus } from "./status.tsx";
 import {
   BlogButton,
+  BlueskyButton,
   CareersButton,
   ChatButton,
   GitHubButton,
+  InstagramButton,
+  LinkedInButton,
+  TwitterButton,
+  YouTubeButton,
 } from "./button/mod.ts";
 
 export function PageFoot() {
@@ -16,7 +21,7 @@ export function PageFoot() {
       <DIV>
         <DIV style="text-align: center;">
           <DIV>
-            <BlogButton />&nbsp;<ChatButton />&nbsp;<GitHubButton />&nbsp;<CareersButton />
+            <BlogButton />&nbsp;<ChatButton />&nbsp;<GitHubButton />&nbsp;<BlueskyButton />&nbsp;<InstagramButton />&nbsp;<LinkedInButton />&nbsp;<TwitterButton />&nbsp;<YouTubeButton />&nbsp;<CareersButton />
           </DIV>
         </DIV>
       </DIV>
