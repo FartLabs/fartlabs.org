@@ -6,7 +6,7 @@ authors:
     username: "EthanThatOneKid"
 topics: ["Community"]
 date: 2024-11-07
-aliases: ["about"]
+aliases: ["about", "oss", "careers"]
 ---
 
 Software shapes every aspect of our digital lives, yet most applications treat
