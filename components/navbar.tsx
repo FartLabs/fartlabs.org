@@ -1,4 +1,4 @@
-import { A, DIV, NAV } from "@fartlabs/htx";
+import { DIV, NAV } from "@fartlabs/htx";
 import { Header, Link } from "@fartlabs/css";
 import {
   BlogButton,
@@ -22,12 +22,6 @@ export function Navbar() {
 
         <DIV class="middle-navbar">
           <BlogButton />&nbsp;<ChatButton />&nbsp;<GitHubButton />
-        </DIV>
-
-        <DIV class="fart-inline">
-          <A href="/#waitlist" class="fart-cta">
-            Claim
-          </A>
         </DIV>
       </DIV>
     </NAV>

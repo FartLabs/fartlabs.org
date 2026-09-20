@@ -27,10 +27,9 @@ async function copyFiles(directory: string) {
   await copy("deno.json", `${directory}/deno.json`, { overwrite: true });
   await copy("static", directory, { overwrite: true });
 
-  const sourceFiles = ["main.ts", "database/kv.ts"];
+  const sourceFiles = ["main.ts"];
   for await (const sourceFile of sourceFiles) {
     try {
-      // Create the destination directory structure if it doesn't exist.
       const destPath = `${directory}/${sourceFile}`;
       const destDir = destPath.substring(0, destPath.lastIndexOf("/"));
       if (destDir !== directory) {
