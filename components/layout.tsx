@@ -1,6 +1,7 @@
 import { BODY, HEAD, HTML, LINK, META, SCRIPT, TITLE } from "@fartlabs/htx";
 import { Navbar } from "./navbar.tsx";
 import { PageFoot } from "./foot.tsx";
+import { fartlabsGraph } from "./fartlabs.graph.ts";
 
 export interface LayoutProps {
   title?: string;
@@ -26,6 +27,9 @@ export function Layout(props: LayoutProps) {
         />
         <TITLE>{title}</TITLE>
         <META name="description" content={description} />
+        <SCRIPT type="application/ld+json">
+          {JSON.stringify(fartlabsGraph)}
+        </SCRIPT>
         <Favicon />
         <GoogleAnalyticsScript />
         {stylesheets
