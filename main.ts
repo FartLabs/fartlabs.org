@@ -26,7 +26,7 @@ export default {
               throw new Error("Failed reCAPTCHA verification");
             }
 
-            const kv = await Deno.openKv(Deno.env.get("DENO_KV_PATH")!);
+            const kv = await Deno.openKv(Deno.env.get("DENO_KV_PATH"));
             const emailExists = await checkEmailExists(kv, body.email);
             if (emailExists) {
               throw new Error("Email already registered");
@@ -49,7 +49,7 @@ export default {
         method: "GET",
         pattern: new URLPattern({ pathname: "/*" }),
         handler: (request) =>
-          serveDir(request, { fsRoot: Deno.args[0] ?? "." }),
+          serveDir(request, { fsRoot: Deno.args[0] ?? "generated" }),
       },
     ],
     () => Response.json({ error: "Not Found" }, { status: 404 }),
