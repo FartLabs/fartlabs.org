@@ -11,7 +11,8 @@ export interface LayoutProps {
 }
 
 export const defaultTitle = "FartLabs, software out the Wazoo";
-export const defaultDescription = "Claim your free FartLabs Computer today.";
+export const defaultDescription =
+  "Explore FartLabs software, experiments, and open-source projects.";
 
 export function Layout(props: LayoutProps) {
   const title = props.title ?? defaultTitle;

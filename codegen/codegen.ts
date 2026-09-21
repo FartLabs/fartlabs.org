@@ -26,20 +26,5 @@ async function copyFiles(directory: string) {
 
   await copy("deno.json", `${directory}/deno.json`, { overwrite: true });
   await copy("static", directory, { overwrite: true });
-
-  const sourceFiles = ["main.ts"];
-  for await (const sourceFile of sourceFiles) {
-    try {
-      const destPath = `${directory}/${sourceFile}`;
-      const destDir = destPath.substring(0, destPath.lastIndexOf("/"));
-      if (destDir !== directory) {
-        await Deno.mkdir(destDir, { recursive: true });
-      }
-
-      await Deno.copyFile(sourceFile, destPath);
-    } catch (error) {
-      console.error(`Failed to copy ${sourceFile}:`, error);
-      throw error;
-    }
-  }
+  await copy("main.ts", `${directory}/main.ts`, { overwrite: true });
 }
