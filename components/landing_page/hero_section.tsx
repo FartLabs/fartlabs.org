@@ -1,4 +1,4 @@
-import { A, BR, DIV, H1, SCRIPT } from "@fartlabs/htx";
+import { BR, DIV, H1, SCRIPT } from "@fartlabs/htx";
 import { Section, TextSpecial } from "@fartlabs/css";
 
 export function HeroSection() {
@@ -13,10 +13,6 @@ export function HeroSection() {
           </H1>
         </DIV>
       </DIV>
-
-      <A href="/#waitlist" class="fart-cta">
-        Claim your free computer
-      </A>
 
       <SCRIPT>{PARALLAX_SCRIPT}</SCRIPT>
     </Section>

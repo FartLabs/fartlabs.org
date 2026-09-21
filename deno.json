@@ -8,7 +8,6 @@
     "#/": "./",
     "@fartlabs/css": "jsr:@fartlabs/css@^0.0.9",
     "@fartlabs/htx": "jsr:@fartlabs/htx@^0.0.10",
-    "@std/cli": "jsr:@std/cli@^1.0.23",
     "@std/front-matter": "jsr:@std/front-matter@^1.0.9",
     "@std/fs": "jsr:@std/fs@^1.0.19",
     "@std/http": "jsr:@std/http@^1.0.21",
@@ -26,14 +25,10 @@
     "generate": "deno run -A codegen/codegen.ts",
     "start": {
       "description": "Start the server",
-      "command": "deno serve --allow-net --allow-read --allow-ffi --allow-env --unstable-kv --env main.ts generated",
+      "command": "deno serve --allow-net --allow-read main.ts generated",
       "dependencies": ["generate"]
     },
     "outdated": "deno outdated --update --latest",
-    "seed": {
-      "description": "Seed the database",
-      "command": "deno run --env --allow-read --allow-env --unstable-kv --allow-net database/cli.ts"
-    },
     "fmt": "deno fmt",
     "lint": "deno lint",
     "check": "deno check",
