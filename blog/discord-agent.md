@@ -40,7 +40,9 @@ stayed boring.
 
 - A Zo Computer. Mine runs on Basic, the cheapest paid plan — $18/month at the
   time of writing, which includes $10/month of AI credits. Nothing here needs a
-  bigger tier: the whole build is one hosted service.
+  bigger tier: the whole build is one hosted service. New to Zo?
+  [Create a free
+  account with $10 in AI credit](https://zo-computer.cello.so/fFG5xDTfXhY).
 - A Discord server you can add a bot to. Bots cannot create servers, so a human
   makes the server and invites the bot.
 - Bun, for the bridge.
