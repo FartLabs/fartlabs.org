@@ -38,7 +38,9 @@ stayed boring.
 
 ## What you need
 
-- A Zo Computer (mine is an ordinary one; nothing here needs a special tier).
+- A Zo Computer. Mine runs on Basic, the cheapest paid plan — $18/month at the
+  time of writing, which includes $10/month of AI credits. Nothing here needs a
+  bigger tier: the whole build is one hosted service.
 - A Discord server you can add a bot to. Bots cannot create servers, so a human
   makes the server and invites the bot.
 - Bun, for the bridge.
