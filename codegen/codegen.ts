@@ -24,7 +24,5 @@ async function removeGeneratedFiles(directory: string) {
 async function copyFiles(directory: string) {
   await Deno.mkdir(directory, { recursive: true });
 
-  await copy("deno.json", `${directory}/deno.json`, { overwrite: true });
   await copy("static", directory, { overwrite: true });
-  await copy("main.ts", `${directory}/main.ts`, { overwrite: true });
 }
