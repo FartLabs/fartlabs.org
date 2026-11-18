@@ -13,6 +13,17 @@ the server because the server serves the generated static files.
 
 Run `deno task start` to start the server.
 
+### Deploy
+
+fartlabs.org runs as the `fartlabs-org` Cloudflare Worker, which serves the
+generated files as static assets. It replaced Deno Deploy, which is shutting
+down.
+
+```sh
+deno task generate
+npx wrangler deploy
+```
+
 ### Style
 
 Run `deno fmt` to format the code.
