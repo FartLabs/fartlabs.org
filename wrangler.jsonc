@@ -7,5 +7,7 @@
   "assets": {
     "directory": "generated"
   },
-  "routes": [{ "pattern": "fartlabs.org", "custom_domain": true }]
+  "routes": [{ "pattern": "fartlabs.org", "custom_domain": true }],
+  // Required by `wrangler preview`, which Workers Builds runs for non-production branches.
+  "previews": {}
 }
