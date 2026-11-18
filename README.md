@@ -19,6 +19,11 @@ fartlabs.org runs as the `fartlabs-org` Cloudflare Worker, which serves the
 generated files as static assets. It replaced Deno Deploy, which is shutting
 down.
 
+Every push to `main` deploys through Cloudflare Workers Builds. The build image
+has no Deno, so the build command is
+`npm i -g deno@2.9.6 && deno task generate`, followed by `npx wrangler deploy`.
+To deploy by hand:
+
 ```sh
 deno task generate
 npx wrangler deploy
