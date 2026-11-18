@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fartlabs-org",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  // Static assets only: `deno task generate` writes the site to generated/.
+  "assets": {
+    "directory": "generated"
+  },
+  "routes": [{ "pattern": "fartlabs.org", "custom_domain": true }]
+}
